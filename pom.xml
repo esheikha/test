@@ -1,0 +1,20 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+-	<modelVersion>4.0.0</modelVersion>
+-	<groupId>kargo.cp.automation</groupId>
+-	<artifactId>cpAutomation</artifactId>
+-	<version>1.0</version>
+-	<name>Kargo Automation Testers build  Java with Spring, Selenium and jBehvae</name>
+-	<description>Kargo CMS for Automation Testers build using Java with Spring, Selenium and jBehvae</description>
+-
+-	<properties>
+-		<org.seleniumhq.selenium.selenium-java.version>2.47.1</org.seleniumhq.selenium.selenium-java.version>
+-		<org.jbehave.core.version>4.0.4</org.jbehave.core.version>
+-		<org.jbehave.web.version>3.6-beta-2</org.jbehave.web.version>
+-		<org.jbehave.site.version>3.3</org.jbehave.site.version>
+-		<org.seleniumhq.selenium.fluent.fluent-selenium.version>1.14.5</org.seleniumhq.selenium.fluent.fluent-selenium.version>
++rg.seleniumhq.selenium.fluent.fluent-selenium.version>
+ 		<org.seleniumhq.selenium.selenium-common.version>2.0a7</org.seleniumhq.selenium.selenium-common.version>
+ 
+ 		<ignore.failures>true</ignore.failures>
