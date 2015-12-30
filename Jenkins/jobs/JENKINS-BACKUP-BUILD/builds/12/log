@@ -1,0 +1,36 @@
+[EnvInject] - Inject global passwords.
+[EnvInject] - Mask passwords passed as build parameters.
+Started by user [8mha:AAAArR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYl/dLi1CL91OKM1MzsjESHxOKCzKJU3cy8NKD65Ay9vNQSAGskkEHXAAAA[0mEyad Sheikha
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6JsnmhmlmJhYAkFdY3McAAAA=[0m4c71f648 (hi-speed lxc-fedora17 xlarge m1.xlarge) in workspace /scratch/jenkins/workspace/JENKINS-BACKUP-BUILD
+Connecting to 54.167.145.90
+Creating a backup to sftp://54.167.145.90/home/ubuntu/jenkins-backup
+100: jobs/DEV-CAD-SERVICES-CAD-DEPLOY/config.xml
+200: jobs/DEV-WEB_SERVER-IT_AUTOMATION-PACKER_AMI/config.xml
+300: jobs/JENKINS-BACKUP-BUILD/builds/9
+Finished. Took 1 sec to back up 316 files
+Connecting to 54.167.145.90
+SSH: Connecting from host [jenkins]
+SSH: Connecting with configuration [services-server] ...
+SSH: EXEC: STDOUT/STDERR from command [cd /home/ubuntu/repo
+sudo git pull
+
+sudo mkdir /home/ubuntu/temp/
+cd /home/ubuntu/temp
+sudo tar -xzf /home/ubuntu/jenkins-backup/backup-JENKINS-BACKUP-BUILD-12.tar.gz
+
+sudo rm -R /home/ubuntu/repo/Jenkins/*
+sudo cp -R  /home/ubuntu/temp/* /home/ubuntu/repo/Jenkins/
+
+cd /home/ubuntu/repo
+
+git add -A && git commit -m "Jenkins backup $(date +\"%Y%m%d_%H%M%S\")"
+
+sudo rm -R /home/ubuntu/temp/
+#sudo git push --repo https://esheikha:****@github.com/esheikha/test.git] ...
+Already up-to-date.
+fatal: Unable to create '/home/ubuntu/repo/.git/index.lock': Permission denied
+SSH: EXEC: completed after 601 ms
+SSH: Disconnecting configuration [services-server] ...
+SSH: Transferred 0 file(s)
+Finished: SUCCESS

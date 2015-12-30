@@ -90,13 +90,22 @@
                 <noDefaultExcludes>false</noDefaultExcludes>
                 <makeEmptyDirs>false</makeEmptyDirs>
                 <patternSeparator>[, ]+</patternSeparator>
-                <execCommand>sudo su ubuntu
-cd /home/ubuntu/repo
-git pull
+                <execCommand>cd /home/ubuntu/repo
+sudo git pull
 
-sudo cp /home/ubuntu/jenkins-backup/* /home/ubuntu/repo
-sudo git add -A &amp;&amp; git commit -m &quot;Jenkins backup $(date +\&quot;%Y%m%d_%H%M%S\&quot;)&quot;
-sudo git push --repo https://esheikha:$pass@github.com/esheikha/test.git</execCommand>
+sudo mkdir /home/ubuntu/temp/
+cd /home/ubuntu/temp
+sudo tar -xzf /home/ubuntu/jenkins-backup/backup-JENKINS-BACKUP-BUILD-$BUILD_NUMBER.tar.gz
+
+sudo rm -R /home/ubuntu/repo/Jenkins/*
+sudo cp -R  /home/ubuntu/temp/* /home/ubuntu/repo/Jenkins/
+
+cd /home/ubuntu/repo
+
+sudo git add -A &amp;&amp; sudo git commit -m &quot;Jenkins backup $(date +\&quot;%Y%m%d_%H%M%S\&quot;)&quot;
+
+sudo rm -R /home/ubuntu/temp/
+#sudo git push --repo https://esheikha:$pass@github.com/esheikha/test.git</execCommand>
                 <execTimeout>120000</execTimeout>
                 <usePty>false</usePty>
               </jenkins.plugins.publish__over__ssh.BapSshTransfer>

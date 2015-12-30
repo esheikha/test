@@ -1,0 +1,24 @@
+[EnvInject] - Inject global passwords.
+[EnvInject] - Mask passwords passed as build parameters.
+Started by user [8mha:AAAArR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYl/dLi1CL91OKM1MzsjESHxOKCzKJU3cy8NKD65Ay9vNQSAGskkEHXAAAA[0mEyad Sheikha
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6aQapiYlJxsYArMfCjscAAAA=[0mf0eaab33 (hi-speed lxc-fedora17 xlarge m1.xlarge) in workspace /scratch/jenkins/workspace/JENKINS-BACKUP-BUILD
+Connecting to 54.167.145.90
+Creating a backup to sftp://54.167.145.90/home/ubuntu/jenkins-backup
+100: jobs/DEV-CAD-SERVICES-CAD-DEPLOY/config.xml
+200: jobs/DEV-WEB_SERVER-IT_AUTOMATION-PACKER_AMI/config.xml
+Finished. Took 1.1 sec to back up 286 files
+Connecting to 54.167.145.90
+SSH: Connecting from host [jenkins]
+SSH: Connecting with configuration [services-server] ...
+SSH: EXEC: STDOUT/STDERR from command [sudo su ubuntu
+cd /home/ubuntu/repo
+git pull
+
+sudo cp /home/ubuntu/jenkins-backup/* /home/ubuntu/repo
+sudo git add -A && git commit -m "Jenkins backup $(date +\"%Y%m%d_%H%M%S\")"
+sudo git push --repo https://esheikha:****@github.com/esheikha/test.git] ...
+SSH: Disconnecting configuration [services-server] ...
+ERROR: Exception when publishing, exception message [Exec timed out or was interrupted after 120,000 ms]
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mBuild step 'Send build artifacts over SSH' changed build result to UNSTABLE
+Finished: UNSTABLE

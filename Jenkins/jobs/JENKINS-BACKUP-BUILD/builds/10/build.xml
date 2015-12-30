@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.infradna.hudson.plugins.backup.BackupRun plugin="infradna-backup@3.22">
+  <actions>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.model.Cause_-UserIdCause>
+          <userId>esheikha@aspire-infotech.net</userId>
+        </hudson.model.Cause_-UserIdCause>
+      </causes>
+    </hudson.model.CauseAction>
+    <com.cloudbees.plugins.deployer.DeployNowRunAction plugin="deployer-framework@1.1">
+      <owner class="com.infradna.hudson.plugins.backup.BackupRun" reference="../../.."/>
+    </com.cloudbees.plugins.deployer.DeployNowRunAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@3.0.11">
+      <queuingDurationMillis>11000</queuingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <org.jenkinsci.plugins.envinject.EnvInjectPluginAction plugin="envinject@1.92.1">
+      <build class="com.infradna.hudson.plugins.backup.BackupRun" reference="../../.."/>
+    </org.jenkinsci.plugins.envinject.EnvInjectPluginAction>
+  </actions>
+  <queueId>11</queueId>
+  <timestamp>1451478686069</timestamp>
+  <startTime>1451478686074</startTime>
+  <result>SUCCESS</result>
+  <duration>4161</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn>e58932d3</builtOn>
+  <workspace>/scratch/jenkins/workspace/JENKINS-BACKUP-BUILD</workspace>
+  <hudsonVersion>1.609.4.6</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</com.infradna.hudson.plugins.backup.BackupRun>

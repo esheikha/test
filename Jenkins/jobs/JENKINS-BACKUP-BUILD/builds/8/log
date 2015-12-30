@@ -1,0 +1,45 @@
+[EnvInject] - Inject global passwords.
+[EnvInject] - Mask passwords passed as build parameters.
+Started by user [8mha:AAAArR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYl/dLi1CL91OKM1MzsjESHxOKCzKJU3cy8NKD65Ay9vNQSAGskkEHXAAAA[0mEyad Sheikha
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6qQZpFubJFokAAczvOscAAAA=[0me0f87c8a (hi-speed lxc-fedora17 xlarge m1.xlarge) in workspace /scratch/jenkins/workspace/JENKINS-BACKUP-BUILD
+Connecting to 54.167.145.90
+Creating a backup to sftp://54.167.145.90/home/ubuntu/jenkins-backup
+100: jobs/DEV-CAD-SERVICES-CAD-DEPLOY/config.xml
+200: jobs/DEV-WEB_SERVER-IT_AUTOMATION-PACKER_AMI/config.xml
+Finished. Took 1 sec to back up 296 files
+Connecting to 54.167.145.90
+SSH: Connecting from host [jenkins]
+SSH: Connecting with configuration [services-server] ...
+SSH: EXEC: STDOUT/STDERR from command [cd /home/ubuntu/repo
+git pull
+
+sudo mkdir /home/ubuntu/temp/
+cd /home/ubuntu/temp
+sudo tar -xzf /home/ubuntu/jenkins-backup/backup-JENKINS-BACKUP-BUILD-*
+
+sudo rm -R /home/ubuntu/repo/Jenkins/*
+sudo cp -R  /home/ubuntu/temp/* /home/ubuntu/repo/Jenkins/
+
+cd /home/ubuntu/repo
+
+git add -A && git commit -m "Jenkins backup $(date +\"%Y%m%d_%H%M%S\"
+
+sudo rm -R /home/ubuntu/temp/
+sudo git push --repo https://esheikha:****@github.com/esheikha/test.git] ...
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+mkdir: cannot create directory ‘/home/ubuntu/temp/’: File exists
+tar (child): /home/ubuntu/jenkins-backup/backup-JENKINS-BACKUP-BUILD-*: Cannot open: No such file or directory
+tar (child): Error is not recoverable: exiting now
+tar: Child returned status 2
+tar: Error is not recoverable: exiting now
+rm: cannot remove ‘/home/ubuntu/repo/Jenkins/*’: No such file or directory
+cp: cannot stat ‘/home/ubuntu/temp/*’: No such file or directory
+bash: -c: line 12: unexpected EOF while looking for matching `)'
+bash: -c: line 16: syntax error: unexpected end of file
+SSH: EXEC: completed after 201 ms
+SSH: Disconnecting configuration [services-server] ...
+ERROR: Exception when publishing, exception message [Exec exit status not zero. Status [1]]
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mBuild step 'Send build artifacts over SSH' changed build result to UNSTABLE
+Finished: UNSTABLE
