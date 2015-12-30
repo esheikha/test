@@ -1,0 +1,76 @@
+[EnvInject] - Inject global passwords.
+[EnvInject] - Mask passwords passed as build parameters.
+Started by user [8mha:AAAArR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYl/dLi1CL91OKM1MzsjESHxOKCzKJU3cy8NKD65Ay9vNQSAGskkEHXAAAA[0mEyad Sheikha
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6iWnGicbJSYYA9Vm9M8cAAAA=[0maf3a3cb1 (hi-speed lxc-fedora17 xlarge m1.xlarge) in workspace /scratch/jenkins/workspace/JENKINS-BACKUP-BUILD
+Connecting to 54.167.145.90
+Creating a backup to sftp://54.167.145.90/home/ubuntu/jenkins-backup
+100: jobs/DEV-CAD-SERVICES-CAD-DEPLOY/config.xml
+200: jobs/DEV-WEB_SERVER-IT_AUTOMATION-PACKER_AMI/config.xml
+300: jobs/JENKINS-BACKUP-BUILD/builds/9
+Finished. Took 1.3 sec to back up 326 files
+Connecting to 54.167.145.90
+SSH: Connecting from host [jenkins]
+SSH: Connecting with configuration [services-server] ...
+SSH: EXEC: STDOUT/STDERR from command [cd /home/ubuntu/repo
+sudo git pull
+
+sudo mkdir /home/ubuntu/temp/
+cd /home/ubuntu/temp
+sudo tar -xzf /home/ubuntu/jenkins-backup/backup-JENKINS-BACKUP-BUILD-14.tar.gz
+
+sudo rm -R /home/ubuntu/repo/Jenkins/*
+sudo cp -R  /home/ubuntu/temp/* /home/ubuntu/repo/Jenkins/
+
+cd /home/ubuntu/repo
+
+sudo git add -A && sudo git commit -m "Jenkins backup $(date +\"%Y%m%d_%H%M%S\")"
+
+sudo rm -R /home/ubuntu/temp/
+sudo git push --repo https://esheikha:****@github.com/esheikha/test.git] ...
+Already up-to-date.
+[dev efbbd82] Jenkins backup "20151230_124212"
+ Committer: root <root@ip-10-158-99-71.ec2.internal>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 8 files changed, 170 insertions(+), 4 deletions(-)
+ create mode 100644 Jenkins/jobs/JENKINS-BACKUP-BUILD/builds/13/build.xml
+ create mode 100644 Jenkins/jobs/JENKINS-BACKUP-BUILD/builds/13/changelog.xml
+ create mode 100644 Jenkins/jobs/JENKINS-BACKUP-BUILD/builds/13/injectedEnvVars.txt
+ create mode 100644 Jenkins/jobs/JENKINS-BACKUP-BUILD/builds/13/log
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+To https://esheikha:****@github.com/esheikha/test.git
+   151a035..efbbd82  dev -> dev
+SSH: EXEC: completed after 1,801 ms
+SSH: Disconnecting configuration [services-server] ...
+SSH: Transferred 0 file(s)
+Finished: SUCCESS
