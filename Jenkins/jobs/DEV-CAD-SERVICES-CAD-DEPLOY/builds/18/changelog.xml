@@ -1,0 +1,12 @@
+commit e868e3b4949c82762c5969281553e9173f3c7c42
+tree 559a82aca6cabf4b844f64598fc565ecf0a8d91e
+parent 995535b484ef8d5aca76d52c131759a162d35a44
+author sarwajeet-akc <sbb@akc.org> 2015-12-22 20:11:25 +0530
+committer sarwajeet-akc <sbb@akc.org> 2015-12-22 20:11:25 +0530
+
+    MKTG-1892 -Making add of new club which is not present in the club table
+    to work with add and update cad service.
+
+
+
+:100644 100644 510c9a39776e56fbd2604e958d4c900a22e51529 f98b3937896639e95e223bc9f0030304772d4396 M	src/main/java/org/akc/assembler/impl/CanineAmbassadorAssemblerImpl.java

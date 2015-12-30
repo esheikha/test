@@ -1,0 +1,14 @@
+Started on Dec 23, 2015 11:10:28 AM
+Using strategy: Default
+[poll] Last Built Revision: Revision 2e1adb9c228af951477c8d43aea951104915b9b9 (refs/remotes/origin/dev)
+using .gitcredentials to set credentials
+ > git --version # timeout=10
+ > git init /home/akcdeployer/tomcat/temp/hudson65626553522143112tmp # timeout=10
+ > git config --local credential.username nhaddadin # timeout=10
+ > git config --local credential.helper store --file=/home/akcdeployer/tomcat/temp/git467657625858513780.credentials # timeout=10
+ > git -c core.askpass=true ls-remote -h https://github.com/akc-org/services-cad.git # timeout=10
+ > git config --local --remove-section credential # timeout=10
+Found 3 remote heads on https://github.com/akc-org/services-cad.git
+[poll] Latest remote head revision on refs/heads/dev is: bdba28e31102aa5ae8331652834193b731cb9ad4
+Done. Took 0.35 sec
+Changes found

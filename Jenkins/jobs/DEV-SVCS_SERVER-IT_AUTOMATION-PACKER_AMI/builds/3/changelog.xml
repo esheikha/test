@@ -1,0 +1,13 @@
+commit d338d6c7a2bcec0557a313ef943fa2bc9951b9ff
+tree 5f5d0aaf8a52a23b288823fe4c105d04588c2119
+parent 36a054c0f6bd9a9b5f2ccad074580302955ce87b
+author Eyad Sheikha <esheikha@aspire-infotech.net> 2015-11-23 14:45:49 +0200
+committer Eyad Sheikha <esheikha@aspire-infotech.net> 2015-11-23 14:45:49 +0200
+
+    Updating services-server recipe to install Java 1.8 and tomcat8
+
+
+
+:100644 100644 600ee318cfc2c03cf9c2987a37ac74f48421f592 e6935c549f199eadf6daac509e9952c16db7240a M	chef-repo/akc-setup/data_bags/mysql/data.json
+:100644 100644 83badd3dd12e0d1cc9eb97799423f34ce0679890 f25c306a2c0f0dd7039a418006628b509649bfbb M	chef-repo/akc-setup/recipes/services-server.rb
+:100644 100644 1ce1d5a950d5f177a004154241c3892415c6add3 caa430e706756140ab473e8d822e056c4e078613 M	chef-repo/akc-setup/templates/default/context.xml.erb

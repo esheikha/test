@@ -1,0 +1,11 @@
+commit 2e1adb9c228af951477c8d43aea951104915b9b9
+tree 71a67db473b8dc56e6cc55cb1bf1b2b250385332
+parent 100ffea321a1f9fc4925a12599e46e51065fb301
+author Amit Desai <Amit.Desai@akc.org> 2015-12-22 22:57:44 -0500
+committer Amit Desai <Amit.Desai@akc.org> 2015-12-22 22:57:44 -0500
+
+    MKTG-1892 Updated test to rollback inserted data
+
+
+
+:100644 100644 b98ee3ad57fc4966338419cecb9761cb84ae1182 27eb2ec1968b5e031a2f0241aa32c025072543fc M	src/test/java/org/akc/dao/impl/CanineAmbassadorDaoImplTest.java

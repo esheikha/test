@@ -1,0 +1,43 @@
+[EnvInject] - Inject global passwords.
+[EnvInject] - Mask passwords passed as build parameters.
+Started by user [8mha:AAAArR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYl/dLi1CL91OKM1MzsjESHxOKCzKJU3cy8NKD65Ay9vNQSAGskkEHXAAAA[0mEyad Sheikha
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6FqlGKalppqkAuzvROscAAAA=[0m8e2def5e (lxc-fedora17 m1.xlarge hi-speed xlarge) in workspace /scratch/jenkins/workspace/Packer_DEV_EMS_WEB
+Cloning the remote Git repository
+Cloning repository https://github.com/akc-org/IT_Automation.git/
+ > git init /scratch/jenkins/workspace/Packer_DEV_EMS_WEB # timeout=10
+Fetching upstream changes from https://github.com/akc-org/IT_Automation.git/
+ > git --version # timeout=10
+using .gitcredentials to set credentials
+ > git config --local credential.username esheikha # timeout=10
+ > git config --local credential.helper store --file=/tmp/git2332081343248183193.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/akc-org/IT_Automation.git/ +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git config remote.origin.url https://github.com/akc-org/IT_Automation.git/ # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/akc-org/IT_Automation.git/ # timeout=10
+Fetching upstream changes from https://github.com/akc-org/IT_Automation.git/
+using .gitcredentials to set credentials
+ > git config --local credential.username esheikha # timeout=10
+ > git config --local credential.helper store --file=/tmp/git3161072003725802034.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/akc-org/IT_Automation.git/ +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 36a054c0f6bd9a9b5f2ccad074580302955ce87b (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 36a054c0f6bd9a9b5f2ccad074580302955ce87b
+First time build. Skipping changelog.
+Unpacking https://releases.hashicorp.com/packer/0.8.6/packer_0.8.6_linux_amd64.zip to /scratch/jenkins/tools/biz.neustar.jenkins.plugins.packer.PackerInstallation/packer on 8e2def5e
+[Packer_DEV_EMS_WEB] $ /scratch/jenkins/tools/biz.neustar.jenkins.plugins.packer.PackerInstallation/packer/packer build -var aws_access_key=**** -var aws_secret_key=**** /tmp/packer6952016008983203503.json
+[1;32mamazon-ebs output will be in this color.[0m
+
+4 error(s) occurred:
+
+* Bad cookbook path '/home/akcdeployer/hudson_home/jobs/Packer_DEV_EMS_WEB/workspace/chef-repo': stat /home/akcdeployer/hudson_home/jobs/Packer_DEV_EMS_WEB/workspace/chef-repo: no such file or directory
+* Bad data bags path '/home/akcdeployer/hudson_home/jobs/Packer_DEV_EMS_WEB/workspace/chef-repo/akc-setup/data_bags': stat /home/akcdeployer/hudson_home/jobs/Packer_DEV_EMS_WEB/workspace/chef-repo/akc-setup/data_bags: no such file or directory
+* Bad encrypted data bag secret '/home/akcdeployer/hudson_home/jobs/Packer_DEV_EMS_WEB/workspace/chef-repo/akc-setup/keys/encrypted_data_bag_secret': stat /home/akcdeployer/hudson_home/jobs/Packer_DEV_EMS_WEB/workspace/chef-repo/akc-setup/keys/encrypted_data_bag_secret: no such file or directory
+* Bad environments path '/home/akcdeployer/hudson_home/jobs/Packer_DEV_EMS_WEB/workspace/chef-repo/environments': stat /home/akcdeployer/hudson_home/jobs/Packer_DEV_EMS_WEB/workspace/chef-repo/environments: no such file or directory
+Finished: FAILURE
+Build step 'Packer' marked build as failure
+Finished: FAILURE

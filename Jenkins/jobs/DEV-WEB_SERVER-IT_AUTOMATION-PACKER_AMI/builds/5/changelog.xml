@@ -1,0 +1,42 @@
+commit b7016ff33dc1c5e1ec7e01f7fc220073792f8afe
+tree 72253f001a9fbb1b7088b11ed73f5453059bf86e
+parent bb3015f80f289219046902f0fe34325a96b57a39
+author Eyad Sheikha <esheikha@aspire-infotech.net> 2015-12-24 13:37:07 +0200
+committer Eyad Sheikha <esheikha@aspire-infotech.net> 2015-12-24 13:37:07 +0200
+
+    Add CAD to services-server setup , and added configuration for nginx
+
+
+
+:100644 100644 c5b0383180b09b9d7b171c1b6668db2376ecdf05 9a7a49d911cc74a9fb864633ecb2a56f066c2366 M	chef-repo/akc-setup/.kitchen.yml
+:000000 100644 0000000000000000000000000000000000000000 9668b6122b79d5c517f3206804c6ac88c539a605 A	chef-repo/akc-setup/files/default/services-web.conf
+:100644 100644 f25c306a2c0f0dd7039a418006628b509649bfbb 89bef0c65b5a82874ab64fa82a3b95ac2c2d92fe M	chef-repo/akc-setup/recipes/services-server.rb
+:100644 100644 caa430e706756140ab473e8d822e056c4e078613 e1dc1355d2ecc676942f150be5db096d81192515 M	chef-repo/akc-setup/templates/default/context.xml.erb
+commit bb3015f80f289219046902f0fe34325a96b57a39
+tree 7b1eb5a179cef91c55031651dae9a13dc3819c2c
+parent d338d6c7a2bcec0557a313ef943fa2bc9951b9ff
+author Eyad Sheikha <esheikha@aspire-infotech.net> 2015-12-24 11:17:53 +0200
+committer Eyad Sheikha <esheikha@aspire-infotech.net> 2015-12-24 11:17:53 +0200
+
+    add ext-apps-web to web server setup, and add nginx proxy setup.
+
+
+
+:100644 100644 9a7a49d911cc74a9fb864633ecb2a56f066c2366 c5b0383180b09b9d7b171c1b6668db2376ecdf05 M	chef-repo/akc-setup/.kitchen.yml
+:000000 100644 0000000000000000000000000000000000000000 1d86703d09fb5bdc2400938152abafa9f698ceee A	chef-repo/akc-setup/files/default/authorized_keys
+:000000 100644 0000000000000000000000000000000000000000 e771459fa6a2c139ab8b05c0a4954c4f28f57c9b A	chef-repo/akc-setup/files/default/ems-web.conf
+:000000 100644 0000000000000000000000000000000000000000 d56bab5ac059aa442dc79f60b2af1ee74129d2b2 A	chef-repo/akc-setup/files/default/ext-apps-web.conf
+:100644 100644 82f2a2512df7e181eceddc06162cec52939e941d 3956a0e668cdd6bfcbdf59386df9ca776b292ab2 M	chef-repo/akc-setup/recipes/webserver.rb
+commit d338d6c7a2bcec0557a313ef943fa2bc9951b9ff
+tree 5f5d0aaf8a52a23b288823fe4c105d04588c2119
+parent 36a054c0f6bd9a9b5f2ccad074580302955ce87b
+author Eyad Sheikha <esheikha@aspire-infotech.net> 2015-11-23 14:45:49 +0200
+committer Eyad Sheikha <esheikha@aspire-infotech.net> 2015-11-23 14:45:49 +0200
+
+    Updating services-server recipe to install Java 1.8 and tomcat8
+
+
+
+:100644 100644 600ee318cfc2c03cf9c2987a37ac74f48421f592 e6935c549f199eadf6daac509e9952c16db7240a M	chef-repo/akc-setup/data_bags/mysql/data.json
+:100644 100644 83badd3dd12e0d1cc9eb97799423f34ce0679890 f25c306a2c0f0dd7039a418006628b509649bfbb M	chef-repo/akc-setup/recipes/services-server.rb
+:100644 100644 1ce1d5a950d5f177a004154241c3892415c6add3 caa430e706756140ab473e8d822e056c4e078613 M	chef-repo/akc-setup/templates/default/context.xml.erb

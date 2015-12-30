@@ -1,0 +1,137 @@
+Started by GitHub push by StealthMaker
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6KamWaZamSZYALohZUMcAAAA=[0mde9f95b9 (hi-speed lxc-fedora17 xlarge m1.xlarge) in workspace /scratch/jenkins/workspace/DEV-CAD-EXT-APPS-WEB-DEPLOY
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/akc-org/Ext-Apps-Web.git # timeout=10
+Fetching upstream changes from https://github.com/akc-org/Ext-Apps-Web.git
+ > git --version # timeout=10
+using .gitcredentials to set credentials
+ > git config --local credential.username nhaddadin # timeout=10
+ > git config --local credential.helper store --file=/tmp/git7947811554312516931.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/akc-org/Ext-Apps-Web.git +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git rev-parse refs/remotes/origin/develop^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/develop^{commit} # timeout=10
+Checking out Revision 6a7efeb009146c132af6b6ba4384ae1f771e4211 (refs/remotes/origin/develop)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 6a7efeb009146c132af6b6ba4384ae1f771e4211
+ > git rev-list 910766f815013e17b92205919f612338f4ed6cd7 # timeout=10
+SSH: Connecting from host [jenkins]
+SSH: Connecting with configuration [webserver] ...
+SSH: EXEC: STDOUT/STDERR from command [cd /var/www/cad/source
+npm install
+gulp publish --env=int] ...
+
+> bufferutil@1.2.1 install /var/www/cad/source/node_modules/bufferutil
+> node-gyp rebuild
+
+gyp ERR! build error 
+gyp ERR! stack Error: not found: make
+gyp ERR! stack     at F (/usr/lib/node_modules/npm/node_modules/which/which.js:78:19)
+gyp ERR! stack     at E (/usr/lib/node_modules/npm/node_modules/which/which.js:82:29)
+gyp ERR! stack     at /usr/lib/node_modules/npm/node_modules/which/which.js:93:16
+gyp ERR! stack     at FSReqWrap.oncomplete (fs.js:82:15)
+gyp ERR! System Linux 3.13.0-48-generic
+gyp ERR! command "/usr/bin/nodejs" "/usr/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "rebuild"
+gyp ERR! cwd /var/www/cad/source/node_modules/bufferutil
+gyp ERR! node -v v5.1.0
+gyp ERR! node-gyp -v v3.0.3
+gyp ERR! not ok 
+npm WARN install:bufferutil@1.2.1 bufferutil@1.2.1 install: `node-gyp rebuild`
+npm WARN install:bufferutil@1.2.1 Exit status 1
+
+> utf-8-validate@1.2.1 install /var/www/cad/source/node_modules/utf-8-validate
+> node-gyp rebuild
+
+gyp ERR! build error 
+gyp ERR! stack Error: not found: make
+gyp ERR! stack     at F (/usr/lib/node_modules/npm/node_modules/which/which.js:78:19)
+gyp ERR! stack     at E (/usr/lib/node_modules/npm/node_modules/which/which.js:82:29)
+gyp ERR! stack     at /usr/lib/node_modules/npm/node_modules/which/which.js:93:16
+gyp ERR! stack     at FSReqWrap.oncomplete (fs.js:82:15)
+gyp ERR! System Linux 3.13.0-48-generic
+gyp ERR! command "/usr/bin/nodejs" "/usr/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "rebuild"
+gyp ERR! cwd /var/www/cad/source/node_modules/utf-8-validate
+gyp ERR! node -v v5.1.0
+gyp ERR! node-gyp -v v3.0.3
+gyp ERR! not ok 
+npm WARN install:utf-8-validate@1.2.1 utf-8-validate@1.2.1 install: `node-gyp rebuild`
+npm WARN install:utf-8-validate@1.2.1 Exit status 1
+
+> ext-events-management@0.0.1 install /var/www/cad/source
+> bower install
+
+npm WARN optional Skipping failed optional dependency /chokidar/fsevents:
+npm WARN notsup Not compatible with your operating system or architecture: fsevents@1.0.6
+npm WARN gulp-jshint@2.0.0 requires a peer of jshint@2.x but none was installed.
+npm WARN ext-events-management@0.0.1 No license field.
+[15:01:12] Using gulpfile /var/www/cad/source/gulpfile.js
+[15:01:12] Starting 'publish'...
+[15:01:12] Starting 'clean:css'...
+[15:01:12] Cleaning: ./.tmp/*.css,./build/0.0.1.0/styles/
+[15:01:13] Starting 'clean:fonts'...
+[15:01:13] Cleaning: ./build/0.0.1.0/fonts
+[15:01:13] Starting 'clean:html'...
+[15:01:13] Cleaning: ./.tmp/templates.js
+[15:01:13] Starting 'clean:images'...
+[15:01:13] Cleaning: ./build/0.0.1.0/images
+[15:01:13] Starting 'clean:js'...
+[15:01:13] Cleaning: ./.tmp/**/*.js,./build/0.0.1.0/js/
+[15:01:13] Finished 'clean:fonts' after 365 ms
+[15:01:13] Finished 'clean:html' after 360 ms
+[15:01:13] Finished 'clean:images' after 250 ms
+[15:01:13] Finished 'clean:js' after 359 ms
+[15:01:13] Finished 'clean:css' after 1.44 s
+[15:01:13] Starting 'clean'...
+[15:01:13] Finished 'clean' after 16 μs
+[15:01:13] Starting 'compile:js:config'...
+[15:01:13] compile js config
+[15:01:14] Starting 'compile:css'...
+[15:01:14] Compiling Less --> CSS
+[15:01:23] Finished 'compile:js:config' after 9.72 s
+[15:01:25] Finished 'compile:css' after 12 s
+[15:01:25] Starting 'compile'...
+[15:01:25] Finished 'compile' after 14 μs
+[15:01:25] Starting 'compile:html'...
+[15:01:25] Creating an AngularJS $templateCache
+[15:01:29] Finished 'compile:html' after 3.96 s
+[15:01:29] Starting 'optimize:css:app'...
+[15:01:29] Wire up css into the html, after files are ready
+[15:01:33] Starting 'optimize:css:lib'...
+[15:01:33] Wire up css into the html, after files are ready
+[15:01:33] Starting 'optimize:fonts'...
+[15:01:33] Copying fonts
+[15:01:33] Starting 'optimize:images'...
+[15:01:33] Compressing and copying images
+[15:01:35] Starting 'optimize:js:lib'...
+[15:01:35] Optimize the bower dependencies
+[15:01:36] Starting 'optimize:js:app'...
+[15:01:36] optimize app JS
+[15:03:03] Finished 'optimize:css:lib' after 1.5 min
+[15:03:38] Finished 'optimize:css:app' after 2.13 min
+[15:05:38] Finished 'optimize:js:lib' after 4.05 min
+[15:05:38] gulp-imagemin: Minified 4 images (saved 56.4 kB - 20.4%)
+[15:05:38] Finished 'optimize:images' after 4.08 min
+[15:05:40] Finished 'optimize:js:app' after 4.07 min
+[15:05:40] Finished 'optimize:fonts' after 4.12 min
+[15:05:40] Starting 'optimize'...
+[15:05:40] Finished 'optimize' after 81 μs
+[15:05:40] Starting 'inject:html'...
+[15:05:40] Wire up css into the html, after files are ready
+[15:05:40] gulp-inject 1 files into index.html.
+[15:05:40] gulp-inject 1 files into index.html.
+[15:05:40] gulp-inject 1 files into index.html.
+[15:05:40] gulp-inject 1 files into index.html.
+[15:05:40] Finished 'inject:html' after 73 ms
+[15:05:40] Starting 'inject'...
+[15:05:40] Finished 'inject' after 12 μs
+[15:05:40] Starting 'cdnify'...
+[15:05:40] cdnify
+[15:05:40] Finished 'cdnify' after 114 ms
+[15:05:40] Finished 'publish' after 4.47 min
+SSH: EXEC: completed after 514,324 ms
+SSH: Disconnecting configuration [webserver] ...
+SSH: Transferred 79 file(s)
+Build step 'Send files or execute commands over SSH' changed build result to SUCCESS
+Finished: SUCCESS

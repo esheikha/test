@@ -1,0 +1,49 @@
+[EnvInject] - Inject global passwords.
+[EnvInject] - Mask passwords passed as build parameters.
+Started by user [8mha:AAAArR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYl/dLi1CL91OKM1MzsjESHxOKCzKJU3cy8NKD65Ay9vNQSAGskkEHXAAAA[0mEyad Sheikha
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6SSapacnmlqkAzgl+9McAAAA=[0mb4efc79e (hi-speed lxc-fedora17 xlarge m1.xlarge) in workspace /scratch/jenkins/workspace/JENKINS-BACKUP-BUILD
+Connecting to 54.167.145.90
+Creating a backup to sftp://54.167.145.90/home/ubuntu/jenkins-backup
+100: jobs/DEV-CAD-SERVICES-CAD-DEPLOY/config.xml
+200: jobs/DEV-WEB_SERVER-IT_AUTOMATION-PACKER_AMI/config.xml
+Finished. Took 1.1 sec to back up 276 files
+Connecting to 54.167.145.90
+SSH: Connecting from host [jenkins]
+SSH: Connecting with configuration [services-server] ...
+SSH: EXEC: STDOUT/STDERR from command [cd /home/ubuntu/repo
+git pull
+
+sudo cp /home/ubuntu/jenkins-backup/* /home/ubuntu/repo
+sudo git add -A && git commit -m "Jenkins backup" 
+sudo git push --repo https://esheikha:****@github.com/esheikha/test.git] ...
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+cp: cannot stat ‘/home/ubuntu/jenkins-backup/*’: No such file or directory
+fatal: Unable to create '/home/ubuntu/repo/.git/index.lock': Permission denied
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Everything up-to-date
+SSH: EXEC: completed after 601 ms
+SSH: Disconnecting configuration [services-server] ...
+SSH: Transferred 0 file(s)
+Finished: SUCCESS

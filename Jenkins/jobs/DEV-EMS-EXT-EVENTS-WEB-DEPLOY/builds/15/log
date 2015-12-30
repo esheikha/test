@@ -1,0 +1,112 @@
+Started by user [8mha:AAAArh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgZl/dLi1CL9vIzElJTElMw8h8TigsyiVN3MvDSghuQMvbzUEgAv6vGP2AAAAA==[0mNisreen Haddedin
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6qYlJxkkWSWYATRJtescAAAA=[0meab3b8b6 (hi-speed lxc-fedora17 xlarge m1.xlarge) in workspace /scratch/jenkins/workspace/EMS-DEV-WebServer-Build
+Cloning the remote Git repository
+Cloning repository https://github.com/akc-org/Ext-Events-Web.git/
+ > git init /scratch/jenkins/workspace/EMS-DEV-WebServer-Build # timeout=10
+Fetching upstream changes from https://github.com/akc-org/Ext-Events-Web.git/
+ > git --version # timeout=10
+using .gitcredentials to set credentials
+ > git config --local credential.username esheikha # timeout=10
+ > git config --local credential.helper store --file=/tmp/git237282838279492509.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/akc-org/Ext-Events-Web.git/ +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git config remote.origin.url https://github.com/akc-org/Ext-Events-Web.git/ # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/akc-org/Ext-Events-Web.git/ # timeout=10
+Fetching upstream changes from https://github.com/akc-org/Ext-Events-Web.git/
+using .gitcredentials to set credentials
+ > git config --local credential.username esheikha # timeout=10
+ > git config --local credential.helper store --file=/tmp/git9020040604432118500.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/akc-org/Ext-Events-Web.git/ +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git rev-parse refs/remotes/origin/develop^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/develop^{commit} # timeout=10
+Checking out Revision 53ea177fd7f6e0e6b6e802570840bf1745eb8873 (refs/remotes/origin/develop)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 53ea177fd7f6e0e6b6e802570840bf1745eb8873
+ > git rev-list c05332fe25c3b22347c9a4b4110c5079c8cccf30 # timeout=10
+SSH: Connecting from host [jenkins]
+SSH: Connecting with configuration [webserver] ...
+SSH: EXEC: STDOUT/STDERR from command [cd /var/www/ems/events
+npm install
+gulp publish --env=int
+] ...
+
+> bufferutil@1.2.1 install /var/www/ems/events/node_modules/bufferutil
+> node-gyp rebuild
+
+gyp ERR! build error 
+gyp ERR! stack Error: not found: make
+gyp ERR! stack     at F (/usr/lib/node_modules/npm/node_modules/which/which.js:78:19)
+gyp ERR! stack     at E (/usr/lib/node_modules/npm/node_modules/which/which.js:82:29)
+gyp ERR! stack     at /usr/lib/node_modules/npm/node_modules/which/which.js:93:16
+gyp ERR! stack     at FSReqWrap.oncomplete (fs.js:82:15)
+gyp ERR! System Linux 3.13.0-48-generic
+gyp ERR! command "/usr/bin/nodejs" "/usr/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "rebuild"
+gyp ERR! cwd /var/www/ems/events/node_modules/bufferutil
+gyp ERR! node -v v5.1.0
+gyp ERR! node-gyp -v v3.0.3
+gyp ERR! not ok 
+npm WARN install:bufferutil@1.2.1 bufferutil@1.2.1 install: `node-gyp rebuild`
+npm WARN install:bufferutil@1.2.1 Exit status 1
+
+> utf-8-validate@1.2.1 install /var/www/ems/events/node_modules/utf-8-validate
+> node-gyp rebuild
+
+gyp ERR! build error 
+gyp ERR! stack Error: not found: make
+gyp ERR! stack     at F (/usr/lib/node_modules/npm/node_modules/which/which.js:78:19)
+gyp ERR! stack     at E (/usr/lib/node_modules/npm/node_modules/which/which.js:82:29)
+gyp ERR! stack     at /usr/lib/node_modules/npm/node_modules/which/which.js:93:16
+gyp ERR! stack     at FSReqWrap.oncomplete (fs.js:82:15)
+gyp ERR! System Linux 3.13.0-48-generic
+gyp ERR! command "/usr/bin/nodejs" "/usr/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "rebuild"
+gyp ERR! cwd /var/www/ems/events/node_modules/utf-8-validate
+gyp ERR! node -v v5.1.0
+gyp ERR! node-gyp -v v3.0.3
+gyp ERR! not ok 
+npm WARN install:utf-8-validate@1.2.1 utf-8-validate@1.2.1 install: `node-gyp rebuild`
+npm WARN install:utf-8-validate@1.2.1 Exit status 1
+
+> ext-events-management@0.0.1 install /var/www/ems/events
+> bower install
+
+npm WARN optional Skipping failed optional dependency /chokidar/fsevents:
+npm WARN notsup Not compatible with your operating system or architecture: fsevents@1.0.5
+npm WARN ext-events-management@0.0.1 No license field.
+int
+[16:30:01] Using gulpfile /var/www/ems/events/gulpfile.js
+[16:30:01] Starting 'publish'...
+[16:30:01] Starting 'clean:css'...
+[16:30:02] Cleaning: ./.tmp/app.css,./build/styles/
+[16:30:02] Starting 'clean:fonts'...
+[16:30:02] Cleaning: ./build/fonts
+[16:30:02] Starting 'clean:html'...
+[16:30:02] Cleaning: ./.tmp/templates.js
+[16:30:02] Starting 'clean:images'...
+[16:30:03] Cleaning: ./build/images
+[16:30:03] Starting 'clean:js'...
+[16:30:03] Cleaning: ./.tmp/**/*.js,./build/js/
+[16:30:03] Finished 'clean:html' after 593 ms
+[16:30:03] 'clean:fonts' errored after 609 ms
+[16:30:03] Error in plugin 'gulp-clean'
+Unable to delete "/var/www/ems/events/build/fonts" file (EACCES: permission denied, unlink '/var/www/ems/events/build/fonts/FontAwesome.otf').
+[16:30:03] 'publish' errored after 1.68 s
+[16:30:03] Error in plugin 'run-sequence'
+Message:
+    An error occured in task 'clean:fonts'.
+[16:30:03] 'clean:images' errored after 605 ms
+[16:30:03] Error in plugin 'gulp-clean'
+Unable to delete "/var/www/ems/events/build/images" file (EACCES: permission denied, unlink '/var/www/ems/events/build/images/AKC-logo.png').
+[16:30:03] 'clean:css' errored after 1.69 s
+[16:30:03] Error in plugin 'gulp-clean'
+Unable to delete "/var/www/ems/events/build/styles" file (EACCES: permission denied, unlink '/var/www/ems/events/build/styles/app.css').
+[16:30:03] 'clean:js' errored after 603 ms
+[16:30:03] Error in plugin 'gulp-clean'
+Unable to delete "/var/www/ems/events/build/js" file (EACCES: permission denied, unlink '/var/www/ems/events/build/js/app.js').
+SSH: EXEC: completed after 111,065 ms
+SSH: Disconnecting configuration [webserver] ...
+ERROR: Exception when publishing, exception message [Exec exit status not zero. Status [1]]
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mBuild step 'Send files or execute commands over SSH' changed build result to UNSTABLE
+Finished: UNSTABLE

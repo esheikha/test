@@ -1,0 +1,14 @@
+Started on Dec 27, 2015 9:20:14 AM
+Using strategy: Default
+[poll] Last Built Revision: Revision 06f87f05829de13caac1a3cfd36448dc5b28020b (refs/remotes/origin/develop)
+using .gitcredentials to set credentials
+ > git --version # timeout=10
+ > git init /home/akcdeployer/tomcat/temp/hudson8572779782378547183tmp # timeout=10
+ > git config --local credential.username nhaddadin # timeout=10
+ > git config --local credential.helper store --file=/home/akcdeployer/tomcat/temp/git2537446790525854101.credentials # timeout=10
+ > git -c core.askpass=true ls-remote -h https://github.com/akc-org/Ext-Apps-Web.git # timeout=10
+ > git config --local --remove-section credential # timeout=10
+Found 2 remote heads on https://github.com/akc-org/Ext-Apps-Web.git
+[poll] Latest remote head revision on refs/heads/develop is: 910766f815013e17b92205919f612338f4ed6cd7
+Done. Took 0.44 sec
+Changes found

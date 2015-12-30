@@ -1,0 +1,36 @@
+[EnvInject] - Inject global passwords.
+[EnvInject] - Mask passwords passed as build parameters.
+Started by user [8mha:AAAArR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYl/dLi1CL91OKM1MzsjESHxOKCzKJU3cy8NKD65Ay9vNQSAGskkEHXAAAA[0mEyad Sheikha
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6ZkkWFinmRuYAVpNiqccAAAA=[0m6b88d727 (lxc-fedora17 m1.xlarge hi-speed xlarge) in workspace /scratch/jenkins/workspace/Packer_DEV_EMS_WEB
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/akc-org/IT_Automation.git/ # timeout=10
+Fetching upstream changes from https://github.com/akc-org/IT_Automation.git/
+ > git --version # timeout=10
+using .gitcredentials to set credentials
+ > git config --local credential.username esheikha # timeout=10
+ > git config --local credential.helper store --file=/tmp/git6712200704172724694.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/akc-org/IT_Automation.git/ +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 36a054c0f6bd9a9b5f2ccad074580302955ce87b (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 36a054c0f6bd9a9b5f2ccad074580302955ce87b
+ > git rev-list 36a054c0f6bd9a9b5f2ccad074580302955ce87b # timeout=10
+[Packer_DEV_EMS_WEB] $ /bin/sh -xe /tmp/hudson3758637109675134161.sh
++ pwd
+/scratch/jenkins/workspace/Packer_DEV_EMS_WEB
+[Packer_DEV_EMS_WEB] $ /scratch/jenkins/tools/biz.neustar.jenkins.plugins.packer.PackerInstallation/packer/packer build -var aws_access_key=**** -var aws_secret_key=**** /tmp/packer4219299994611311294.json
+[1;32mamazon-ebs output will be in this color.[0m
+
+4 error(s) occurred:
+
+* Bad cookbook path '$WORKSPACE/chef-repo': stat $WORKSPACE/chef-repo: no such file or directory
+* Bad data bags path '$WORKSPACE/chef-repo/akc-setup/data_bags': stat $WORKSPACE/chef-repo/akc-setup/data_bags: no such file or directory
+* Bad encrypted data bag secret '$WORKSPACE/chef-repo/akc-setup/keys/encrypted_data_bag_secret': stat $WORKSPACE/chef-repo/akc-setup/keys/encrypted_data_bag_secret: no such file or directory
+* Bad environments path '$WORKSPACE/chef-repo/environments': stat $WORKSPACE/chef-repo/environments: no such file or directory
+Finished: FAILURE
+Build step 'Packer' marked build as failure
+Finished: FAILURE

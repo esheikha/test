@@ -1,0 +1,68 @@
+Started by user [8mha:AAAArR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYl/dLi1CL91OKM1MzsjESHxOKCzKJU3cy8NKD65Ay9vNQSAGskkEHXAAAA[0mEyad Sheikha
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6pqaGFqlGRmkAqNaLRMcAAAA=[0m5518e22f (hi-speed lxc-fedora17 xlarge m1.xlarge) in workspace /scratch/jenkins/workspace/DEV-AKC-ORG-SERVICES-CORE-DEPLOY
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/akc-org/services-core.git # timeout=10
+Fetching upstream changes from https://github.com/akc-org/services-core.git
+ > git --version # timeout=10
+using .gitcredentials to set credentials
+ > git config --local credential.username nhaddadin # timeout=10
+ > git config --local credential.helper store --file=/tmp/git3885295984780905907.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/akc-org/services-core.git +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git rev-parse refs/remotes/origin/dev^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/dev^{commit} # timeout=10
+Checking out Revision 7db780b4f0f27b96a3aed172f94c254222fe1086 (refs/remotes/origin/dev)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7db780b4f0f27b96a3aed172f94c254222fe1086
+ > git rev-list 7db780b4f0f27b96a3aed172f94c254222fe1086 # timeout=10
+SSH: Connecting from host [jenkins]
+SSH: Connecting with configuration [services-server] ...
+SSH: EXEC: STDOUT/STDERR from command [cd ~/services-core/auth
+rm -Rf /opt/tomcat/webapps/auth
+mvn validate
+mvn clean compile war:war
+
+sudo cp -f misc/prop/local/*.properties /opt/tomcat/akcapps
+sudo cp -f misc/*.properties /opt/tomcat/akcapps
+
+] ...
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building auth 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.434s
+[INFO] Finished at: Tue Dec 29 10:13:47 UTC 2015
+[INFO] Final Memory: 4M/11M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building auth 1.0
+[INFO] ------------------------------------------------------------------------
+[WARNING] The POM for org.safehaus.jug:jug:jar:2.0.0-asl is missing, no dependency information available
+[WARNING] The POM for gigya-sdk:gigya-sdk:jar:3.2.0 is missing, no dependency information available
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.437s
+[INFO] Finished at: Tue Dec 29 10:13:54 UTC 2015
+[INFO] Final Memory: 8M/19M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project auth: Could not resolve dependencies for project auth:auth:war:1.0: The following artifacts could not be resolved: org.safehaus.jug:jug:jar:2.0.0-asl, gigya-sdk:gigya-sdk:jar:3.2.0: Failure to find org.safehaus.jug:jug:jar:2.0.0-asl in http://repository.springsource.com/maven/bundles/release was cached in the local repository, resolution will not be reattempted until the update interval of com.springsource.repository.bundles.release has elapsed or updates are forced -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+SSH: EXEC: completed after 12,807 ms
+SSH: Disconnecting configuration [services-server] ...
+SSH: Transferred 37 file(s)
+Build step 'Send files or execute commands over SSH' changed build result to SUCCESS
+Finished: SUCCESS

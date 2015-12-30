@@ -1,0 +1,1636 @@
+Started by user [8mha:AAAArR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYl/dLi1CL91OKM1MzsjESHxOKCzKJU3cy8NKD65Ay9vNQSAGskkEHXAAAA[0mEyad Sheikha
+Started by user [8mha:AAAArR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYl/dLi1CL91OKM1MzsjESHxOKCzKJU3cy8NKD65Ay9vNQSAGskkEHXAAAA[0mEyad Sheikha
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6ZskGpmamhoYAjzsYu8cAAAA=[0m6c056511 (hi-speed lxc-fedora17 xlarge m1.xlarge) in workspace /scratch/jenkins/workspace/EMS-DEV-WebServer-Build
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/akc-org/Ext-Events-Web.git/ # timeout=10
+Fetching upstream changes from https://github.com/akc-org/Ext-Events-Web.git/
+ > git --version # timeout=10
+using .gitcredentials to set credentials
+ > git config --local credential.username esheikha # timeout=10
+ > git config --local credential.helper store --file=/tmp/git1538421800188160973.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/akc-org/Ext-Events-Web.git/ +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git rev-parse refs/remotes/origin/develop^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/develop^{commit} # timeout=10
+Checking out Revision c05332fe25c3b22347c9a4b4110c5079c8cccf30 (refs/remotes/origin/develop)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c05332fe25c3b22347c9a4b4110c5079c8cccf30
+ > git rev-list c05332fe25c3b22347c9a4b4110c5079c8cccf30 # timeout=10
+SSH: Connecting from host [jenkins]
+SSH: Connecting with configuration [webserver] ...
+SSH: EXEC: STDOUT/STDERR from command [cd /var/www/ems/events
+npm install
+gulp publish --env=int
+pm2 kill
+pm2 start /var/www/ems/events/server/app.js
+pm2 start /var/www/cad/source/server/app.js int] ...
+npm WARN deprecated gulp-clean@0.3.1: use gulp-rimraf instead
+npm WARN deprecated lodash@1.0.2: lodash@<3.0.0 is no longer maintained. Upgrade to lodash@^3.0.0
+npm WARN deprecated lodash@2.4.2: lodash@<3.0.0 is no longer maintained. Upgrade to lodash@^3.0.0
+npm WARN prefer global nodemon@1.8.1 should be installed with -g
+
+> bufferutil@1.2.1 install /var/www/ems/events/node_modules/bufferutil
+> node-gyp rebuild
+
+gyp ERR! build error 
+gyp ERR! stack Error: not found: make
+gyp ERR! stack     at F (/usr/lib/node_modules/npm/node_modules/which/which.js:78:19)
+gyp ERR! stack     at E (/usr/lib/node_modules/npm/node_modules/which/which.js:82:29)
+gyp ERR! stack     at /usr/lib/node_modules/npm/node_modules/which/which.js:93:16
+gyp ERR! stack     at FSReqWrap.oncomplete (fs.js:82:15)
+gyp ERR! System Linux 3.13.0-48-generic
+gyp ERR! command "/usr/bin/nodejs" "/usr/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "rebuild"
+gyp ERR! cwd /var/www/ems/events/node_modules/bufferutil
+gyp ERR! node -v v5.1.0
+gyp ERR! node-gyp -v v3.0.3
+gyp ERR! not ok 
+npm WARN install:bufferutil@1.2.1 bufferutil@1.2.1 install: `node-gyp rebuild`
+npm WARN install:bufferutil@1.2.1 Exit status 1
+
+> utf-8-validate@1.2.1 install /var/www/ems/events/node_modules/utf-8-validate
+> node-gyp rebuild
+
+gyp ERR! build error 
+gyp ERR! stack Error: not found: make
+gyp ERR! stack     at F (/usr/lib/node_modules/npm/node_modules/which/which.js:78:19)
+gyp ERR! stack     at E (/usr/lib/node_modules/npm/node_modules/which/which.js:82:29)
+gyp ERR! stack     at /usr/lib/node_modules/npm/node_modules/which/which.js:93:16
+gyp ERR! stack     at FSReqWrap.oncomplete (fs.js:82:15)
+gyp ERR! System Linux 3.13.0-48-generic
+gyp ERR! command "/usr/bin/nodejs" "/usr/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "rebuild"
+gyp ERR! cwd /var/www/ems/events/node_modules/utf-8-validate
+gyp ERR! node -v v5.1.0
+gyp ERR! node-gyp -v v3.0.3
+gyp ERR! not ok 
+npm WARN install:utf-8-validate@1.2.1 utf-8-validate@1.2.1 install: `node-gyp rebuild`
+npm WARN install:utf-8-validate@1.2.1 Exit status 1
+
+> optipng-bin@3.0.3 postinstall /var/www/ems/events/node_modules/optipng-bin
+> node lib/install.js
+
+  ✔ optipng pre-build test passed successfully
+
+> jpegtran-bin@3.0.6 postinstall /var/www/ems/events/node_modules/jpegtran-bin
+> node lib/install.js
+
+  ✔ jpegtran pre-build test passed successfully
+
+> gifsicle@3.0.3 postinstall /var/www/ems/events/node_modules/gifsicle
+> node lib/install.js
+
+  ✔ gifsicle pre-build test passed successfully
+
+> ext-events-management@0.0.1 install /var/www/ems/events
+> bower install
+
+bower sinon#*               not-cached http://sinonjs.org/releases/sinon-1.12.1.js#*
+bower sinon#*                  resolve http://sinonjs.org/releases/sinon-1.12.1.js#*
+bower sinon#*                 download http://sinonjs.org/releases/sinon-1.12.1.js
+bower angular#~1.4.4            cached git://github.com/angular/bower-angular.git#1.4.8
+bower angular#~1.4.4          validate 1.4.8 against git://github.com/angular/bower-angular.git#~1.4.4
+bower jquery#~2.1.1             cached git://github.com/jquery/jquery.git#2.1.4
+bower jquery#~2.1.1           validate 2.1.4 against git://github.com/jquery/jquery.git#~2.1.1
+bower angular-cache#*           cached git://github.com/jmdobry/angular-cache.git#4.4.2
+bower angular-cache#*         validate 4.4.2 against git://github.com/jmdobry/angular-cache.git#*
+bower angular-sanitize#~1.4.4   cached git://github.com/angular/bower-angular-sanitize.git#1.4.8
+bower angular-sanitize#~1.4.4 validate 1.4.8 against git://github.com/angular/bower-angular-sanitize.git#~1.4.4
+bower bootstrap#~3.3.3          cached git://github.com/twbs/bootstrap.git#3.3.6
+bower bootstrap#~3.3.3        validate 3.3.6 against git://github.com/twbs/bootstrap.git#~3.3.3
+bower extras.angular.plus#~0.9.2           cached git://github.com/AngularPlus/AngularPlus.git#0.9.3
+bower extras.angular.plus#~0.9.2         validate 0.9.3 against git://github.com/AngularPlus/AngularPlus.git#~0.9.2
+bower font-awesome#~4.2.0                  cached git://github.com/FortAwesome/Font-Awesome.git#4.2.0
+bower font-awesome#~4.2.0                validate 4.2.0 against git://github.com/FortAwesome/Font-Awesome.git#~4.2.0
+bower angular-ui-router#~0.2.13            cached git://github.com/angular-ui/ui-router.git#0.2.15
+bower angular-ui-router#~0.2.13          validate 0.2.15 against git://github.com/angular-ui/ui-router.git#~0.2.13
+bower toastr#~2.1.0                        cached git://github.com/johnpapa/toastr-bower.git#2.1.2
+bower toastr#~2.1.0                      validate 2.1.2 against git://github.com/johnpapa/toastr-bower.git#~2.1.0
+bower bootstrap-datepicker#~1.4.0      not-cached git://github.com/eternicode/bootstrap-datepicker.git#~1.4.0
+bower bootstrap-datepicker#~1.4.0         resolve git://github.com/eternicode/bootstrap-datepicker.git#~1.4.0
+bower angular-animate#~1.4.4               cached git://github.com/angular/bower-angular-animate.git#1.4.8
+bower angular-animate#~1.4.4             validate 1.4.8 against git://github.com/angular/bower-angular-animate.git#~1.4.4
+bower angular-mocks#~1.4.4                 cached git://github.com/angular/bower-angular-mocks.git#1.4.8
+bower angular-mocks#~1.4.4               validate 1.4.8 against git://github.com/angular/bower-angular-mocks.git#~1.4.4
+bower angular-ui-select#~0.12.1        not-cached git://github.com/angular-ui/ui-select.git#~0.12.1
+bower angular-ui-select#~0.12.1           resolve git://github.com/angular-ui/ui-select.git#~0.12.1
+bower select2#~3.4.5                   not-cached git://github.com/ivaynberg/select2.git#~3.4.5
+bower select2#~3.4.5                      resolve git://github.com/ivaynberg/select2.git#~3.4.5
+bower nya-bootstrap-select#*           not-cached git://github.com/lordfriend/nya-bootstrap-select.git#*
+bower nya-bootstrap-select#*              resolve git://github.com/lordfriend/nya-bootstrap-select.git#*
+bower bardjs#~0.0.8                    not-cached git://github.com/wardbell/bardjs.git#~0.0.8
+bower bardjs#~0.0.8                       resolve git://github.com/wardbell/bardjs.git#~0.0.8
+bower moment#~2.8.4                    not-cached git://github.com/moment/moment.git#~2.8.4
+bower moment#~2.8.4                       resolve git://github.com/moment/moment.git#~2.8.4
+bower sinon#*                            progress received 0.1MB of 0.2MB downloaded, 71%
+bower bootstrap-datepicker#~1.4.0        download https://github.com/eternicode/bootstrap-datepicker/archive/v1.4.1.tar.gz
+bower angular#>=1.x                        cached git://github.com/angular/bower-angular.git#1.4.8
+bower angular#>=1.x                      validate 1.4.8 against git://github.com/angular/bower-angular.git#>=1.x
+bower nya-bootstrap-select#*             download https://github.com/lordfriend/nya-bootstrap-select/archive/v2.1.2.tar.gz
+bower select2#~3.4.5                     download https://github.com/ivaynberg/select2/archive/3.4.8.tar.gz
+bower angular-ui-select#~0.12.1          download https://github.com/angular-ui/ui-select/archive/v0.12.1.tar.gz
+bower angular#^1.2.25                      cached git://github.com/angular/bower-angular.git#1.4.8
+bower angular#^1.2.25                    validate 1.4.8 against git://github.com/angular/bower-angular.git#^1.2.25
+bower bardjs#~0.0.8                      download https://github.com/wardbell/bardjs/archive/0.0.9.tar.gz
+bower moment#~2.8.4                      download https://github.com/moment/moment/archive/2.8.4.tar.gz
+bower sinon#*                        invalid-meta sinon is missing "ignore" entry in bower.json
+bower sinon#*                            resolved http://sinonjs.org/releases/sinon-1.12.1.js#e-tag:562fe09b-
+bower angular-ui-select#~0.12.1           extract archive.tar.gz
+bower bardjs#~0.0.8                       extract archive.tar.gz
+bower select2#~3.4.5                      extract archive.tar.gz
+bower moment#~2.8.4                       extract archive.tar.gz
+bower bootstrap-datepicker#~1.4.0         extract archive.tar.gz
+bower nya-bootstrap-select#*              extract archive.tar.gz
+bower bardjs#~0.0.8                      resolved git://github.com/wardbell/bardjs.git#0.0.9
+bower select2#~3.4.5                 invalid-meta select2 is missing "ignore" entry in bower.json
+bower select2#~3.4.5                     resolved git://github.com/ivaynberg/select2.git#3.4.8
+bower angular-ui-select#~0.12.1          resolved git://github.com/angular-ui/ui-select.git#0.12.1
+bower nya-bootstrap-select#*             resolved git://github.com/lordfriend/nya-bootstrap-select.git#2.1.2
+bower bootstrap-datepicker#~1.4.0        resolved git://github.com/eternicode/bootstrap-datepicker.git#1.4.1
+bower moment#~2.8.4                      resolved git://github.com/moment/moment.git#2.8.4
+bower angular-cache#*                     install angular-cache#4.4.2
+bower jquery#~2.1.1                       install jquery#2.1.4
+bower font-awesome#~4.2.0                 install font-awesome#4.2.0
+bower extras.angular.plus#~0.9.2          install extras.angular.plus#0.9.3
+bower bootstrap#~3.3.3                    install bootstrap#3.3.6
+bower angular-sanitize#~1.4.4             install angular-sanitize#1.4.8
+bower angular#~1.4.4                      install angular#1.4.8
+bower toastr#~2.1.0                       install toastr#2.1.2
+bower angular-ui-router#~0.2.13           install angular-ui-router#0.2.15
+bower angular-mocks#~1.4.4                install angular-mocks#1.4.8
+bower angular-animate#~1.4.4              install angular-animate#1.4.8
+bower sinon#*                             install sinon#e-tag:562fe09b-
+bower bardjs#~0.0.8                       install bardjs#0.0.9
+bower select2#~3.4.5                      install select2#3.4.8
+bower angular-ui-select#~0.12.1           install angular-ui-select#0.12.1
+bower nya-bootstrap-select#*              install nya-bootstrap-select#2.1.2
+bower bootstrap-datepicker#~1.4.0         install bootstrap-datepicker#1.4.1
+bower moment#~2.8.4                       install moment#2.8.4
+bower                                 postinstall gulp inject
+bower                                 postinstall dev
+bower                                 postinstall [15:04:27] 
+bower                                 postinstall Using gulpfile /var/www/ems/events/gulpfile.js
+bower                                 postinstall [15:04:27] 
+bower                                 postinstall Starting 'inject:html'...
+bower                                 postinstall [15:04:27] 
+bower                                 postinstall Wire up css into the html, after files are ready
+bower                                 postinstall { jsOrder: 
+bower                                 postinstall    [ '**/configValues.js',
+bower                                 postinstall      '**/app.module.js',
+bower                                 postinstall      '**/*.module.js',
+bower                                 postinstall      '**/*.js' ],
+bower                                 postinstall   appCss: './.tmp/app.css',
+bower                                 postinstall   appJs: 
+bower                                 postinstall    [ './client/app/**/*.module.js',
+bower                                 postinstall      './client/app/**/*.js',
+bower                                 postinstall      '!./client/fakes/*.js' ],
+bower                                 postinstall   libCss: 
+bower                                 postinstall    [ '/var/www/ems/events/bower_components/bootstrap/dist/css/bootstrap.css',
+bower                                 postinstall      '/var/www/ems/events/bower_components/font-awesome/css/font-awesome.css',
+bower                                 postinstall      '/var/www/ems/events/bower_components/toastr/toastr.css',
+bower                                 postinstall      '/var/www/ems/events/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.css',
+bower                                 postinstall      '/var/www/ems/events/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css',
+bower                                 postinstall      '/var/www/ems/events/bower_components/angular-ui-select/dist/select.css',
+bower                                 postinstall      '/var/www/ems/events/bower_components/select2/select2.css',
+bower                                 postinstall      '/var/www/ems/events/bower_components/nya-bootstrap-select/dist/css/nya-bs-select.css' ],
+bower                                 postinstall   libJs: 
+bower                                 postinstall    [ '/var/www/ems/events/bower_components/jquery/dist/jquery.js',
+bower                                 postinstall      '/var/www/ems/events/bower_components/angular/angular.js',
+bower                                 postinstall      '/var/www/ems/events/bower_components/angular-cache/dist/angular-cache.js',
+bower                                 postinstall      '/var/www/ems/events/bower_components/angular-sanitize/angular-sanitize.js',
+bower                                 postinstall      '/var/www/ems/events/bower_components/bootstrap/dist/js/bootstrap.js',
+bower                                 postinstall      '/var/www/ems/events/bower_components/extras.angular.plus/ngplus-overlay.js',
+bower                                 postinstall      '/var/www/ems/events/bower_components/moment/moment.js',
+bower                                 postinstall      '/var/www/ems/events/bower_components/angular-ui-router/release/angular-ui-router.js',
+bower                                 postinstall      '/var/www/ems/events/bower_components/toastr/toastr.js',
+bower                                 postinstall      '/var/www/ems/events/bower_components/angular-animate/angular-animate.js',
+bower                                 postinstall      '/var/www/ems/events/bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js',
+bower                                 postinstall      '/var/www/ems/events/bower_components/angular-ui-select/dist/select.js',
+bower                                 postinstall      '/var/www/ems/events/bower_components/select2/select2.js',
+bower                                 postinstall      '/var/www/ems/events/bower_components/nya-bootstrap-select/dist/js/nya-bs-select.js' ],
+bower                                 postinstall   index: './client/' }
+bower                                 postinstall [15:04:28] 
+bower                                 postinstall gulp-inject 8 files into index.html.
+bower                                 postinstall [15:04:28] 
+bower                                 postinstall gulp-inject Nothing to inject into index.html.
+bower                                 postinstall [15:04:28] 
+bower                                 postinstall gulp-inject 14 files into index.html.
+bower                                 postinstall [15:04:28] 
+bower                                 postinstall gulp-inject 29 files into index.html.
+bower                                 postinstall [15:04:28] 
+bower                                 postinstall Finished 'inject:html' after 496 ms
+bower                                 postinstall [15:04:28] 
+bower                                 postinstall Starting 'inject'...
+bower                                 postinstall [15:04:28] 
+bower                                 postinstall Finished 'inject' after 32 μs
+
+angular-cache#4.4.2 bower_components/angular-cache
+└── angular#1.4.8
+
+jquery#2.1.4 bower_components/jquery
+
+font-awesome#4.2.0 bower_components/font-awesome
+
+extras.angular.plus#0.9.3 bower_components/extras.angular.plus
+└── angular#1.4.8
+
+bootstrap#3.3.6 bower_components/bootstrap
+└── jquery#2.1.4
+
+angular-sanitize#1.4.8 bower_components/angular-sanitize
+└── angular#1.4.8
+
+angular#1.4.8 bower_components/angular
+
+toastr#2.1.2 bower_components/toastr
+└── jquery#2.1.4
+
+angular-ui-router#0.2.15 bower_components/angular-ui-router
+└── angular#1.4.8
+
+angular-mocks#1.4.8 bower_components/angular-mocks
+└── angular#1.4.8
+
+angular-animate#1.4.8 bower_components/angular-animate
+└── angular#1.4.8
+
+sinon#e-tag:562fe09b- bower_components/sinon
+
+bardjs#0.0.9 bower_components/bardjs
+
+select2#3.4.8 bower_components/select2
+└── jquery#2.1.4
+
+angular-ui-select#0.12.1 bower_components/angular-ui-select
+└── angular#1.4.8
+
+nya-bootstrap-select#2.1.2 bower_components/nya-bootstrap-select
+└── angular#1.4.8
+
+bootstrap-datepicker#1.4.1 bower_components/bootstrap-datepicker
+├── bootstrap#3.3.6
+└── jquery#2.1.4
+
+moment#2.8.4 bower_components/moment
+ext-events-management@0.0.1 /var/www/ems/events
+├─┬ browser-sync@2.10.0 
+│ ├─┬ anymatch@1.3.0 
+│ │ ├── arrify@1.0.0 
+│ │ └─┬ micromatch@2.3.3 
+│ │   ├─┬ arr-diff@1.1.0 
+│ │   │ ├── arr-flatten@1.0.1 
+│ │   │ └── array-slice@0.2.3 
+│ │   ├── array-unique@0.2.1 
+│ │   ├─┬ braces@1.8.2 
+│ │   │ ├─┬ expand-range@1.8.1 
+│ │   │ │ └─┬ fill-range@2.2.2 
+│ │   │ │   ├── is-number@1.1.2 
+│ │   │ │   ├── isobject@1.0.2 
+│ │   │ │   ├─┬ randomatic@1.1.3 
+│ │   │ │   │ └─┬ is-number@2.1.0 
+│ │   │ │   │   └── kind-of@3.0.2 
+│ │   │ │   └── repeat-string@1.5.2 
+│ │   │ ├── preserve@0.2.0 
+│ │   │ └── repeat-element@1.1.2 
+│ │   ├── expand-brackets@0.1.4 
+│ │   ├─┬ extglob@0.3.1 
+│ │   │ ├─┬ ansi-green@0.1.1 
+│ │   │ │ └── ansi-wrap@0.1.0 
+│ │   │ └── success-symbol@0.1.0 
+│ │   ├── filename-regex@2.0.0 
+│ │   ├── is-extglob@1.0.0 
+│ │   ├─┬ kind-of@2.0.1 
+│ │   │ └── is-buffer@1.1.0 
+│ │   ├── lazy-cache@0.2.4 
+│ │   ├─┬ object.omit@2.0.0 
+│ │   │ ├─┬ for-own@0.1.3 
+│ │   │ │ └── for-in@0.1.4 
+│ │   │ └── is-extendable@0.1.1 
+│ │   ├─┬ parse-glob@3.0.4 
+│ │   │ ├── glob-base@0.3.0 
+│ │   │ └── is-dotfile@1.0.2 
+│ │   └─┬ regex-cache@0.4.2 
+│ │     ├── is-equal-shallow@0.1.3 
+│ │     └── is-primitive@2.0.0 
+│ ├── async-each-series@0.1.1 
+│ ├── browser-sync-client@2.4.1 
+│ ├─┬ browser-sync-ui@0.5.16 
+│ │ ├── connect-history-api-fallback@0.0.5 
+│ │ ├─┬ stream-throttle@0.1.3 
+│ │ │ ├─┬ commander@2.9.0 
+│ │ │ │ └── graceful-readlink@1.0.1 
+│ │ │ └── limiter@1.1.0 
+│ │ └─┬ weinre@2.0.0-pre-I0Z7U9OV 
+│ │   ├─┬ express@2.5.11 
+│ │   │ ├─┬ connect@1.9.2 
+│ │   │ │ └── formidable@1.0.17 
+│ │   │ ├── mime@1.2.4 
+│ │   │ ├── mkdirp@0.3.0 
+│ │   │ └── qs@0.4.2 
+│ │   ├─┬ nopt@3.0.6 
+│ │   │ └── abbrev@1.0.7 
+│ │   └── underscore@1.7.0 
+│ ├── bs-recipes@1.0.5 
+│ ├─┬ chokidar@1.4.0 
+│ │ ├── async-each@0.1.6 
+│ │ ├── glob-parent@2.0.0 
+│ │ ├─┬ is-binary-path@1.0.1 
+│ │ │ └── binary-extensions@1.4.0 
+│ │ ├── is-glob@2.0.1 
+│ │ ├── path-is-absolute@1.0.0 
+│ │ └── readdirp@2.0.0 
+│ ├── connect@3.4.0 
+│ ├── dev-ip@1.0.1 
+│ ├── easy-extender@2.3.2 
+│ ├─┬ eazy-logger@2.1.2 
+│ │ ├── opt-merger@1.1.1 
+│ │ └─┬ tfunk@3.0.1 
+│ │   └── object-path@0.9.2 
+│ ├── emitter-steward@1.0.0 
+│ ├─┬ foxy@11.1.4 
+│ │ ├─┬ http-proxy@1.12.0 
+│ │ │ ├── eventemitter3@1.1.1 
+│ │ │ └── requires-port@0.0.1 
+│ │ ├─┬ lodash.merge@3.3.2 
+│ │ │ ├── lodash._arraycopy@3.0.0 
+│ │ │ ├── lodash._arrayeach@3.0.0 
+│ │ │ ├── lodash._createassigner@3.1.1 
+│ │ │ ├── lodash._getnative@3.9.1 
+│ │ │ ├── lodash.isarguments@3.0.4 
+│ │ │ ├── lodash.isarray@3.0.4 
+│ │ │ ├─┬ lodash.isplainobject@3.2.0 
+│ │ │ │ └── lodash._basefor@3.0.2 
+│ │ │ ├── lodash.istypedarray@3.0.2 
+│ │ │ ├── lodash.keysin@3.0.8 
+│ │ │ └── lodash.toplainobject@3.0.0 
+│ │ └── resp-modifier@4.0.4 
+│ ├─┬ fs-extra@0.26.2 
+│ │ ├── graceful-fs@4.1.2 
+│ │ ├── jsonfile@2.2.3 
+│ │ └── klaw@1.1.2 
+│ ├── immutable@3.7.5 
+│ ├─┬ localtunnel@1.8.0 
+│ │ ├── openurl@1.1.0 
+│ │ ├─┬ request@2.65.0 
+│ │ │ ├── aws-sign2@0.6.0 
+│ │ │ ├── bl@1.0.0 
+│ │ │ ├── caseless@0.11.0 
+│ │ │ ├─┬ combined-stream@1.0.5 
+│ │ │ │ └── delayed-stream@1.0.0 
+│ │ │ ├── forever-agent@0.6.1 
+│ │ │ ├─┬ form-data@1.0.0-rc3 
+│ │ │ │ └── async@1.5.0 
+│ │ │ ├─┬ har-validator@2.0.3 
+│ │ │ │ ├─┬ chalk@1.1.1 
+│ │ │ │ │ ├── ansi-styles@2.1.0 
+│ │ │ │ │ ├─┬ has-ansi@2.0.0 
+│ │ │ │ │ │ └── ansi-regex@2.0.0 
+│ │ │ │ │ ├── strip-ansi@3.0.0 
+│ │ │ │ │ └── supports-color@2.0.0 
+│ │ │ │ ├─┬ is-my-json-valid@2.12.3 
+│ │ │ │ │ ├── generate-function@2.0.0 
+│ │ │ │ │ ├─┬ generate-object-property@1.2.0 
+│ │ │ │ │ │ └── is-property@1.0.2 
+│ │ │ │ │ └── jsonpointer@2.0.0 
+│ │ │ │ └─┬ pinkie-promise@2.0.0 
+│ │ │ │   └── pinkie@2.0.1 
+│ │ │ ├─┬ hawk@3.1.2 
+│ │ │ │ ├── boom@2.10.1 
+│ │ │ │ ├── cryptiles@2.0.5 
+│ │ │ │ ├── hoek@2.16.3 
+│ │ │ │ └── sntp@1.0.9 
+│ │ │ ├─┬ http-signature@0.11.0 
+│ │ │ │ ├── asn1@0.1.11 
+│ │ │ │ ├── assert-plus@0.1.5 
+│ │ │ │ └── ctype@0.5.3 
+│ │ │ ├── isstream@0.1.2 
+│ │ │ ├── json-stringify-safe@5.0.1 
+│ │ │ ├── oauth-sign@0.8.0 
+│ │ │ ├── qs@5.2.0 
+│ │ │ ├── stringstream@0.0.5 
+│ │ │ ├── tough-cookie@2.2.1 
+│ │ │ └── tunnel-agent@0.4.1 
+│ │ └─┬ yargs@3.29.0 
+│ │   └── camelcase@1.2.1 
+│ ├── longest@1.0.1 
+│ ├─┬ meow@3.3.0 
+│ │ ├─┬ camelcase-keys@1.0.0 
+│ │ │ └── map-obj@1.0.1 
+│ │ └─┬ indent-string@1.2.2 
+│ │   └─┬ repeating@1.1.3 
+│ │     └── is-finite@1.0.1 
+│ ├─┬ opn@3.0.3 
+│ │ └── object-assign@4.0.1 
+│ ├─┬ portscanner@1.0.0 
+│ │ └── async@0.1.15 
+│ ├─┬ query-string@2.4.2 
+│ │ └── strict-uri-encode@1.0.2 
+│ ├─┬ resp-modifier@5.0.2 
+│ │ └─┬ minimatch@2.0.10 
+│ │   └─┬ brace-expansion@1.1.2 
+│ │     ├── balanced-match@0.3.0 
+│ │     └── concat-map@0.0.1 
+│ ├─┬ serve-index@1.7.2 
+│ │ ├─┬ accepts@1.2.13 
+│ │ │ └── negotiator@0.5.3 
+│ │ ├── batch@0.5.2 
+│ │ ├── http-errors@1.3.1 
+│ │ └── mime-types@2.1.8 
+│ ├── serve-static@1.10.0 
+│ ├─┬ socket.io@1.3.7 
+│ │ ├─┬ debug@2.1.0 
+│ │ │ └── ms@0.6.2 
+│ │ ├─┬ engine.io@1.5.4 
+│ │ │ ├── base64id@0.1.0 
+│ │ │ ├─┬ debug@1.0.3 
+│ │ │ │ └── ms@0.6.2 
+│ │ │ ├─┬ engine.io-parser@1.2.2 
+│ │ │ │ ├── after@0.8.1 
+│ │ │ │ ├── arraybuffer.slice@0.0.6 
+│ │ │ │ ├── base64-arraybuffer@0.1.2 
+│ │ │ │ ├── blob@0.0.4 
+│ │ │ │ └── utf8@2.1.0 
+│ │ │ └─┬ ws@0.8.0 
+│ │ │   ├── options@0.0.6 
+│ │ │   └── ultron@1.0.2 
+│ │ ├── has-binary-data@0.1.3 
+│ │ ├─┬ socket.io-adapter@0.3.1 
+│ │ │ ├─┬ debug@1.0.2 
+│ │ │ │ └── ms@0.6.2 
+│ │ │ ├── object-keys@1.0.1 
+│ │ │ └─┬ socket.io-parser@2.2.2 
+│ │ │   └── debug@0.7.4 
+│ │ ├─┬ socket.io-client@1.3.7 
+│ │ │ ├── backo2@1.0.2 
+│ │ │ ├── component-bind@1.0.0 
+│ │ │ ├── component-emitter@1.1.2 
+│ │ │ ├── debug@0.7.4 
+│ │ │ ├─┬ engine.io-client@1.5.4 
+│ │ │ │ ├── component-inherit@0.0.3 
+│ │ │ │ ├─┬ debug@1.0.4 
+│ │ │ │ │ └── ms@0.6.2 
+│ │ │ │ ├─┬ has-cors@1.0.3 
+│ │ │ │ │ └── global@2.0.1 
+│ │ │ │ ├── parsejson@0.0.1 
+│ │ │ │ ├── parseqs@0.0.2 
+│ │ │ │ ├── parseuri@0.0.4 
+│ │ │ │ └── xmlhttprequest@1.5.0 
+│ │ │ ├── has-binary@0.1.6 
+│ │ │ ├── indexof@0.0.1 
+│ │ │ ├── object-component@0.0.3 
+│ │ │ ├─┬ parseuri@0.0.2 
+│ │ │ │ └─┬ better-assert@1.0.2 
+│ │ │ │   └── callsite@1.0.0 
+│ │ │ └── to-array@0.1.3 
+│ │ └─┬ socket.io-parser@2.2.4 
+│ │   ├── benchmark@1.0.0 
+│ │   ├── debug@0.7.4 
+│ │   └── json3@3.2.6 
+│ ├── ua-parser-js@0.7.9 
+│ └── ucfirst@1.0.0 
+├─┬ compression@1.6.0 
+│ ├─┬ accepts@1.3.0 
+│ │ └── negotiator@0.6.0 
+│ ├── bytes@2.1.0 
+│ ├─┬ compressible@2.0.6 
+│ │ └── mime-db@1.20.0 
+│ ├── debug@2.2.0 
+│ ├── on-headers@1.0.1 
+│ └── vary@1.1.0 
+├── cors@2.7.1 
+├─┬ express@4.13.3 
+│ ├─┬ accepts@1.2.13 
+│ │ └── negotiator@0.5.3 
+│ ├── array-flatten@1.1.1 
+│ ├── content-disposition@0.5.0 
+│ ├── content-type@1.0.1 
+│ ├── cookie@0.1.3 
+│ ├── cookie-signature@1.0.6 
+│ ├── depd@1.0.1 
+│ ├── escape-html@1.0.2 
+│ ├── etag@1.7.0 
+│ ├─┬ finalhandler@0.4.0 
+│ │ └── unpipe@1.0.0 
+│ ├── fresh@0.3.0 
+│ ├── merge-descriptors@1.0.0 
+│ ├── methods@1.1.1 
+│ ├─┬ on-finished@2.3.0 
+│ │ └── ee-first@1.1.1 
+│ ├── parseurl@1.3.0 
+│ ├── path-to-regexp@0.1.7 
+│ ├─┬ proxy-addr@1.0.9 
+│ │ ├── forwarded@0.1.0 
+│ │ └── ipaddr.js@1.0.4 
+│ ├── qs@4.0.0 
+│ ├── range-parser@1.0.3 
+│ ├─┬ send@0.13.0 
+│ │ ├── destroy@1.0.3 
+│ │ ├── mime@1.3.4 
+│ │ └── statuses@1.2.1 
+│ ├─┬ type-is@1.6.10 
+│ │ └── media-typer@0.3.0 
+│ ├── utils-merge@1.0.0 
+│ └── vary@1.0.1 
+├─┬ gulp@3.9.0 
+│ ├── archy@1.0.0 
+│ ├─┬ chalk@1.1.1 
+│ │ ├── ansi-styles@2.1.0 
+│ │ ├── escape-string-regexp@1.0.3 
+│ │ ├─┬ has-ansi@2.0.0 
+│ │ │ └── ansi-regex@2.0.0 
+│ │ ├── strip-ansi@3.0.0 
+│ │ └── supports-color@2.0.0 
+│ ├── deprecated@0.0.1 
+│ ├── interpret@0.6.6 
+│ ├─┬ liftoff@2.2.0 
+│ │ ├── extend@2.0.1 
+│ │ ├── findup-sync@0.3.0 
+│ │ ├── flagged-respawn@0.3.1 
+│ │ └── rechoir@0.6.2 
+│ ├── minimist@1.2.0 
+│ ├─┬ orchestrator@0.3.7 
+│ │ ├── end-of-stream@0.1.5 
+│ │ ├── sequencify@0.0.7 
+│ │ └── stream-consume@0.1.0 
+│ ├── pretty-hrtime@1.0.1 
+│ ├── semver@4.3.6 
+│ ├─┬ tildify@1.1.2 
+│ │ └── os-homedir@1.0.1 
+│ ├─┬ v8flags@2.0.10 
+│ │ └── user-home@1.1.1 
+│ └─┬ vinyl-fs@0.3.14 
+│   ├── defaults@1.0.3 
+│   ├─┬ glob-stream@3.1.18 
+│   │ ├── glob@4.5.3 
+│   │ ├─┬ glob2base@0.0.12 
+│   │ │ └── find-index@0.1.1 
+│   │ ├── ordered-read-streams@0.1.0 
+│   │ ├─┬ through2@0.6.5 
+│   │ │ └── readable-stream@1.0.33 
+│   │ └── unique-stream@1.0.0 
+│   ├─┬ glob-watcher@0.0.6 
+│   │ └─┬ gaze@0.5.2 
+│   │   └─┬ globule@0.1.0 
+│   │     ├─┬ glob@3.1.21 
+│   │     │ ├── graceful-fs@1.2.3 
+│   │     │ └── inherits@1.0.2 
+│   │     ├── lodash@1.0.2 
+│   │     └── minimatch@0.2.14 
+│   ├── graceful-fs@3.0.8 
+│   ├─┬ mkdirp@0.5.1 
+│   │ └── minimist@0.0.8 
+│   ├─┬ strip-bom@1.0.0 
+│   │ ├── first-chunk-stream@1.0.0 
+│   │ └── is-utf8@0.2.0 
+│   ├─┬ through2@0.6.5 
+│   │ └── readable-stream@1.0.33 
+│   └─┬ vinyl@0.4.6 
+│     └── clone@0.2.0 
+├─┬ gulp-angular-templatecache@1.8.0 
+│ ├─┬ event-stream@3.3.2 
+│ │ ├── duplexer@0.1.1 
+│ │ ├── from@0.1.3 
+│ │ ├── map-stream@0.1.0 
+│ │ ├── pause-stream@0.0.11 
+│ │ ├── split@0.3.3 
+│ │ └── stream-combiner@0.0.4 
+│ ├─┬ gulp-footer@1.0.5 
+│ │ └─┬ lodash.assign@3.2.0 
+│ │   └── lodash._baseassign@3.2.0 
+│ ├── gulp-header@1.7.1 
+│ ├── js-string-escape@1.0.0 
+│ └─┬ path@0.12.7 
+│   ├── process@0.11.2 
+│   └── util@0.10.3 
+├─┬ gulp-autoprefixer@3.1.0 
+│ ├─┬ autoprefixer@6.1.2 
+│ │ ├── browserslist@1.0.1 
+│ │ ├── caniuse-db@1.0.30000374 
+│ │ ├── num2fraction@1.2.2 
+│ │ └── postcss-value-parser@3.1.3 
+│ ├─┬ postcss@5.0.12 
+│ │ ├── js-base64@2.1.9 
+│ │ ├── source-map@0.5.3 
+│ │ └─┬ supports-color@3.1.2 
+│ │   └── has-flag@1.0.0 
+│ ├─┬ through2@2.0.0 
+│ │ ├─┬ readable-stream@2.0.4 
+│ │ │ ├── process-nextick-args@1.0.6 
+│ │ │ ├── string_decoder@0.10.31 
+│ │ │ └── util-deprecate@1.0.2 
+│ │ └── xtend@4.0.1 
+│ └── vinyl-sourcemaps-apply@0.2.0 
+├─┬ gulp-cdnify@1.0.4 
+│ ├─┬ css-url-rewriter@0.1.3 
+│ │ └── extend@3.0.0 
+│ ├── path@0.11.14 
+│ ├─┬ soup@0.1.5 
+│ │ ├─┬ cheerio@0.19.0 
+│ │ │ ├─┬ css-select@1.0.0 
+│ │ │ │ ├── boolbase@1.0.0 
+│ │ │ │ ├── css-what@1.0.0 
+│ │ │ │ ├── domutils@1.4.3 
+│ │ │ │ └── nth-check@1.0.1 
+│ │ │ ├─┬ dom-serializer@0.1.0 
+│ │ │ │ └── domelementtype@1.1.3 
+│ │ │ ├── entities@1.1.1 
+│ │ │ └─┬ htmlparser2@3.8.3 
+│ │ │   ├── domutils@1.5.1 
+│ │ │   ├── entities@1.0.0 
+│ │ │   └── readable-stream@1.1.13 
+│ │ └─┬ htmlparser2@3.9.0 
+│ │   ├── domelementtype@1.3.0 
+│ │   ├── domhandler@2.3.0 
+│ │   └── domutils@1.5.1 
+│ └─┬ through2@0.6.5 
+│   └── readable-stream@1.0.33 
+├─┬ gulp-clean@0.3.1 
+│ ├─┬ gulp-util@2.2.20 
+│ │ ├── lodash._reinterpolate@2.4.1 
+│ │ ├─┬ lodash.template@2.4.1 
+│ │ │ ├── lodash._escapestringchar@2.4.1 
+│ │ │ ├─┬ lodash.defaults@2.4.1 
+│ │ │ │ ├── lodash._objecttypes@2.4.1 
+│ │ │ │ └── lodash.keys@2.4.1 
+│ │ │ ├─┬ lodash.escape@2.4.1 
+│ │ │ │ ├─┬ lodash._escapehtmlchar@2.4.1 
+│ │ │ │ │ └── lodash._htmlescapes@2.4.1 
+│ │ │ │ └─┬ lodash._reunescapedhtml@2.4.1 
+│ │ │ │   └── lodash.keys@2.4.1 
+│ │ │ ├─┬ lodash.keys@2.4.1 
+│ │ │ │ ├── lodash._isnative@2.4.1 
+│ │ │ │ ├── lodash._shimkeys@2.4.1 
+│ │ │ │ └── lodash.isobject@2.4.1 
+│ │ │ ├── lodash.templatesettings@2.4.1 
+│ │ │ └─┬ lodash.values@2.4.1 
+│ │ │   └── lodash.keys@2.4.1 
+│ │ ├── minimist@0.2.0 
+│ │ ├─┬ through2@0.5.1 
+│ │ │ └── xtend@3.0.0 
+│ │ └── vinyl@0.2.3 
+│ ├── rimraf@2.4.4 
+│ └─┬ through2@0.4.2 
+│   ├── readable-stream@1.0.33 
+│   └─┬ xtend@2.1.2 
+│     └── object-keys@0.4.0 
+├─┬ gulp-concat@2.6.0 
+│ ├── concat-with-sourcemaps@1.0.4 
+│ └─┬ through2@0.6.5 
+│   └── readable-stream@1.0.33 
+├─┬ gulp-csso@1.0.1 
+│ └─┬ csso@1.4.3 
+│   └─┬ clap@1.0.9 
+│     └─┬ chalk@1.1.1 
+│       ├── ansi-styles@2.1.0 
+│       ├─┬ has-ansi@2.0.0 
+│       │ └── ansi-regex@2.0.0 
+│       ├── strip-ansi@3.0.0 
+│       └── supports-color@2.0.0 
+├─┬ gulp-if@2.0.0 
+│ ├─┬ gulp-match@1.0.0 
+│ │ └── minimatch@3.0.0 
+│ └─┬ ternary-stream@2.0.0 
+│   ├─┬ duplexify@3.4.2 
+│   │ └── end-of-stream@1.0.0 
+│   ├── fork-stream@0.0.4 
+│   └── merge-stream@1.0.0 
+├─┬ gulp-imagemin@2.4.0 
+│ ├─┬ chalk@1.1.1 
+│ │ ├── ansi-styles@2.1.0 
+│ │ ├─┬ has-ansi@2.0.0 
+│ │ │ └── ansi-regex@2.0.0 
+│ │ ├── strip-ansi@3.0.0 
+│ │ └── supports-color@2.0.0 
+│ ├─┬ imagemin@4.0.0 
+│ │ ├─┬ buffer-to-vinyl@1.1.0 
+│ │ │ ├── file-type@3.3.0 
+│ │ │ ├── uuid@2.0.1 
+│ │ │ └── vinyl@1.1.0 
+│ │ ├─┬ concat-stream@1.5.1 
+│ │ │ └── typedarray@0.0.6 
+│ │ ├─┬ imagemin-gifsicle@4.2.0 
+│ │ │ ├─┬ gifsicle@3.0.3 
+│ │ │ │ ├─┬ bin-build@2.2.0 
+│ │ │ │ │ ├── archive-type@3.0.2 
+│ │ │ │ │ ├─┬ decompress@3.0.0 
+│ │ │ │ │ │ ├─┬ decompress-tar@3.1.0 
+│ │ │ │ │ │ │ ├── is-tar@1.0.0 
+│ │ │ │ │ │ │ ├── object-assign@2.1.1 
+│ │ │ │ │ │ │ ├─┬ strip-dirs@1.1.1 
+│ │ │ │ │ │ │ │ ├─┬ chalk@1.1.1 
+│ │ │ │ │ │ │ │ │ ├── ansi-styles@2.1.0 
+│ │ │ │ │ │ │ │ │ ├─┬ has-ansi@2.0.0 
+│ │ │ │ │ │ │ │ │ │ └── ansi-regex@2.0.0 
+│ │ │ │ │ │ │ │ │ ├── strip-ansi@3.0.0 
+│ │ │ │ │ │ │ │ │ └── supports-color@2.0.0 
+│ │ │ │ │ │ │ │ ├─┬ is-absolute@0.1.7 
+│ │ │ │ │ │ │ │ │ └── is-relative@0.1.3 
+│ │ │ │ │ │ │ │ ├── is-natural-number@2.0.0 
+│ │ │ │ │ │ │ │ └─┬ sum-up@1.0.2 
+│ │ │ │ │ │ │ │   └─┬ chalk@1.1.1 
+│ │ │ │ │ │ │ │     ├── ansi-styles@2.1.0 
+│ │ │ │ │ │ │ │     ├─┬ has-ansi@2.0.0 
+│ │ │ │ │ │ │ │     │ └── ansi-regex@2.0.0 
+│ │ │ │ │ │ │ │     ├── strip-ansi@3.0.0 
+│ │ │ │ │ │ │ │     └── supports-color@2.0.0 
+│ │ │ │ │ │ │ ├─┬ tar-stream@1.3.1 
+│ │ │ │ │ │ │ │ └── end-of-stream@1.1.0 
+│ │ │ │ │ │ │ ├─┬ through2@0.6.5 
+│ │ │ │ │ │ │ │ └── readable-stream@1.0.33 
+│ │ │ │ │ │ │ └─┬ vinyl@0.4.6 
+│ │ │ │ │ │ │   └── clone@0.2.0 
+│ │ │ │ │ │ ├─┬ decompress-tarbz2@3.1.0 
+│ │ │ │ │ │ │ ├── is-bzip2@1.0.0 
+│ │ │ │ │ │ │ ├── object-assign@2.1.1 
+│ │ │ │ │ │ │ ├─┬ seek-bzip@1.0.5 
+│ │ │ │ │ │ │ │ └── commander@2.8.1 
+│ │ │ │ │ │ │ ├─┬ through2@0.6.5 
+│ │ │ │ │ │ │ │ └── readable-stream@1.0.33 
+│ │ │ │ │ │ │ └─┬ vinyl@0.4.6 
+│ │ │ │ │ │ │   └── clone@0.2.0 
+│ │ │ │ │ │ ├─┬ decompress-targz@3.1.0 
+│ │ │ │ │ │ │ ├── is-gzip@1.0.0 
+│ │ │ │ │ │ │ ├── object-assign@2.1.1 
+│ │ │ │ │ │ │ ├─┬ through2@0.6.5 
+│ │ │ │ │ │ │ │ └── readable-stream@1.0.33 
+│ │ │ │ │ │ │ └─┬ vinyl@0.4.6 
+│ │ │ │ │ │ │   └── clone@0.2.0 
+│ │ │ │ │ │ ├─┬ decompress-unzip@3.4.0 
+│ │ │ │ │ │ │ ├── is-zip@1.0.0 
+│ │ │ │ │ │ │ ├── stat-mode@0.2.1 
+│ │ │ │ │ │ │ ├── vinyl@1.1.0 
+│ │ │ │ │ │ │ └─┬ yauzl@2.3.1 
+│ │ │ │ │ │ │   ├── fd-slicer@1.0.1 
+│ │ │ │ │ │ │   └── pend@1.2.0 
+│ │ │ │ │ │ ├─┬ vinyl-assign@1.2.1 
+│ │ │ │ │ │ │ └── object-assign@4.0.1 
+│ │ │ │ │ │ └─┬ vinyl-fs@2.2.1 
+│ │ │ │ │ │   ├─┬ glob-stream@5.2.0 
+│ │ │ │ │ │   │ ├── ordered-read-streams@0.3.0 
+│ │ │ │ │ │   │ ├─┬ through2@0.6.5 
+│ │ │ │ │ │   │ │ └── readable-stream@1.0.33 
+│ │ │ │ │ │   │ └── unique-stream@2.2.0 
+│ │ │ │ │ │   ├─┬ mkdirp@0.5.1 
+│ │ │ │ │ │   │ └── minimist@0.0.8 
+│ │ │ │ │ │   ├── object-assign@4.0.1 
+│ │ │ │ │ │   ├── strip-bom@2.0.0 
+│ │ │ │ │ │   └── vinyl@1.1.0 
+│ │ │ │ │ ├─┬ download@4.4.3 
+│ │ │ │ │ │ ├─┬ caw@1.1.0 
+│ │ │ │ │ │ │ ├─┬ get-proxy@1.0.1 
+│ │ │ │ │ │ │ │ └─┬ rc@0.5.5 
+│ │ │ │ │ │ │ │   ├── deep-extend@0.2.11 
+│ │ │ │ │ │ │ │   ├── minimist@0.0.10 
+│ │ │ │ │ │ │ │   └── strip-json-comments@0.1.3 
+│ │ │ │ │ │ │ └── is-obj@1.0.0 
+│ │ │ │ │ │ ├─┬ filenamify@1.2.0 
+│ │ │ │ │ │ │ ├── filename-reserved-regex@1.0.0 
+│ │ │ │ │ │ │ ├── strip-outer@1.0.0 
+│ │ │ │ │ │ │ └── trim-repeated@1.0.0 
+│ │ │ │ │ │ ├─┬ got@5.2.0 
+│ │ │ │ │ │ │ ├─┬ create-error-class@2.0.1 
+│ │ │ │ │ │ │ │ └── capture-stack-trace@1.0.0 
+│ │ │ │ │ │ │ ├── is-plain-obj@1.1.0 
+│ │ │ │ │ │ │ ├── node-status-codes@1.0.0 
+│ │ │ │ │ │ │ ├── object-assign@4.0.1 
+│ │ │ │ │ │ │ ├─┬ parse-json@2.2.0 
+│ │ │ │ │ │ │ │ └─┬ error-ex@1.3.0 
+│ │ │ │ │ │ │ │   └── is-arrayish@0.2.1 
+│ │ │ │ │ │ │ ├── unzip-response@1.0.0 
+│ │ │ │ │ │ │ └── url-parse-lax@1.0.0 
+│ │ │ │ │ │ ├── gulp-decompress@1.2.0 
+│ │ │ │ │ │ ├── gulp-rename@1.2.2 
+│ │ │ │ │ │ ├── is-url@1.2.1 
+│ │ │ │ │ │ ├── object-assign@4.0.1 
+│ │ │ │ │ │ ├─┬ read-all-stream@3.0.1 
+│ │ │ │ │ │ │ └─┬ pinkie-promise@1.0.0 
+│ │ │ │ │ │ │   └── pinkie@1.0.0 
+│ │ │ │ │ │ ├── vinyl@1.1.0 
+│ │ │ │ │ │ ├─┬ vinyl-fs@2.2.1 
+│ │ │ │ │ │ │ ├─┬ glob-stream@5.2.0 
+│ │ │ │ │ │ │ │ ├── ordered-read-streams@0.3.0 
+│ │ │ │ │ │ │ │ ├─┬ through2@0.6.5 
+│ │ │ │ │ │ │ │ │ └── readable-stream@1.0.33 
+│ │ │ │ │ │ │ │ └── unique-stream@2.2.0 
+│ │ │ │ │ │ │ ├─┬ mkdirp@0.5.1 
+│ │ │ │ │ │ │ │ └── minimist@0.0.8 
+│ │ │ │ │ │ │ └── strip-bom@2.0.0 
+│ │ │ │ │ │ └─┬ ware@1.3.0 
+│ │ │ │ │ │   └─┬ wrap-fn@0.1.4 
+│ │ │ │ │ │     └── co@3.1.0 
+│ │ │ │ │ ├─┬ exec-series@1.0.2 
+│ │ │ │ │ │ └── async-each-series@1.1.0 
+│ │ │ │ │ └─┬ url-regex@3.1.0 
+│ │ │ │ │   └── ip-regex@1.0.3 
+│ │ │ │ ├─┬ bin-wrapper@3.0.2 
+│ │ │ │ │ ├─┬ bin-check@2.0.0 
+│ │ │ │ │ │ └── executable@1.1.0 
+│ │ │ │ │ ├─┬ bin-version-check@2.1.0 
+│ │ │ │ │ │ ├─┬ bin-version@1.0.4 
+│ │ │ │ │ │ │ └─┬ find-versions@1.2.1 
+│ │ │ │ │ │ │   ├─┬ meow@3.6.0 
+│ │ │ │ │ │ │   │ ├─┬ camelcase-keys@2.0.0 
+│ │ │ │ │ │ │   │ │ └── camelcase@2.0.1 
+│ │ │ │ │ │ │   │ ├─┬ loud-rejection@1.2.0 
+│ │ │ │ │ │ │   │ │ └── signal-exit@2.1.2 
+│ │ │ │ │ │ │   │ ├─┬ normalize-package-data@2.3.5 
+│ │ │ │ │ │ │   │ │ ├── hosted-git-info@2.1.4 
+│ │ │ │ │ │ │   │ │ ├─┬ is-builtin-module@1.0.0 
+│ │ │ │ │ │ │   │ │ │ └── builtin-modules@1.1.0 
+│ │ │ │ │ │ │   │ │ └─┬ validate-npm-package-license@3.0.1 
+│ │ │ │ │ │ │   │ │   ├─┬ spdx-correct@1.0.2 
+│ │ │ │ │ │ │   │ │   │ └── spdx-license-ids@1.1.0 
+│ │ │ │ │ │ │   │ │   └─┬ spdx-expression-parse@1.0.2 
+│ │ │ │ │ │ │   │ │     └── spdx-exceptions@1.0.4 
+│ │ │ │ │ │ │   │ ├── object-assign@4.0.1 
+│ │ │ │ │ │ │   │ ├─┬ read-pkg-up@1.0.1 
+│ │ │ │ │ │ │   │ │ ├─┬ find-up@1.1.0 
+│ │ │ │ │ │ │   │ │ │ └── path-exists@2.1.0 
+│ │ │ │ │ │ │   │ │ └─┬ read-pkg@1.1.0 
+│ │ │ │ │ │ │   │ │   ├─┬ load-json-file@1.1.0 
+│ │ │ │ │ │ │   │ │   │ ├── pify@2.3.0 
+│ │ │ │ │ │ │   │ │   │ └── strip-bom@2.0.0 
+│ │ │ │ │ │ │   │ │   └── path-type@1.1.0 
+│ │ │ │ │ │ │   │ ├─┬ redent@1.0.0 
+│ │ │ │ │ │ │   │ │ ├─┬ indent-string@2.1.0 
+│ │ │ │ │ │ │   │ │ │ └── repeating@2.0.0 
+│ │ │ │ │ │ │   │ │ └── strip-indent@1.0.1 
+│ │ │ │ │ │ │   │ └── trim-newlines@1.0.0 
+│ │ │ │ │ │ │   └── semver-regex@1.0.0 
+│ │ │ │ │ │ └─┬ semver-truncate@1.1.0 
+│ │ │ │ │ │   └── semver@5.1.0 
+│ │ │ │ │ ├─┬ each-async@1.1.1 
+│ │ │ │ │ │ ├── onetime@1.0.0 
+│ │ │ │ │ │ └── set-immediate-shim@1.0.1 
+│ │ │ │ │ ├── lazy-req@1.1.0 
+│ │ │ │ │ └── os-filter-obj@1.0.3 
+│ │ │ │ └─┬ logalot@2.1.0 
+│ │ │ │   ├── figures@1.4.0 
+│ │ │ │   └─┬ squeak@1.3.0 
+│ │ │ │     ├─┬ chalk@1.1.1 
+│ │ │ │     │ ├── ansi-styles@2.1.0 
+│ │ │ │     │ ├─┬ has-ansi@2.0.0 
+│ │ │ │     │ │ └── ansi-regex@2.0.0 
+│ │ │ │     │ ├── strip-ansi@3.0.0 
+│ │ │ │     │ └── supports-color@2.0.0 
+│ │ │ │     ├── console-stream@0.1.1 
+│ │ │ │     └─┬ lpad-align@1.1.0 
+│ │ │ │       └── lpad@2.0.1 
+│ │ │ ├── is-gif@1.0.0 
+│ │ │ └─┬ through2@0.6.5 
+│ │ │   └── readable-stream@1.0.33 
+│ │ ├─┬ imagemin-jpegtran@4.3.2 
+│ │ │ ├── is-jpg@1.0.0 
+│ │ │ └── jpegtran-bin@3.0.6 
+│ │ ├─┬ imagemin-optipng@4.3.0 
+│ │ │ ├─┬ exec-buffer@2.0.1 
+│ │ │ │ └── tempfile@1.1.1 
+│ │ │ ├── is-png@1.0.0 
+│ │ │ ├── optipng-bin@3.0.3 
+│ │ │ └─┬ through2@0.6.5 
+│ │ │   └── readable-stream@1.0.33 
+│ │ ├─┬ imagemin-svgo@4.2.0 
+│ │ │ ├── is-svg@1.1.1 
+│ │ │ └─┬ svgo@0.6.1 
+│ │ │   ├─┬ coa@1.0.1 
+│ │ │   │ └── q@1.4.1 
+│ │ │   ├─┬ js-yaml@3.4.6 
+│ │ │   │ ├─┬ argparse@1.0.3 
+│ │ │   │ │ └── sprintf-js@1.0.3 
+│ │ │   │ ├── esprima@2.7.0 
+│ │ │   │ └── inherit@2.2.2 
+│ │ │   ├─┬ mkdirp@0.5.1 
+│ │ │   │ └── minimist@0.0.8 
+│ │ │   ├── sax@1.1.4 
+│ │ │   └── whet.extend@0.9.9 
+│ │ ├── optional@0.1.3 
+│ │ ├─┬ stream-combiner2@1.1.1 
+│ │ │ └── duplexer2@0.1.4 
+│ │ └─┬ vinyl-fs@2.2.1 
+│ │   ├─┬ glob-stream@5.2.0 
+│ │   │ ├─┬ ordered-read-streams@0.3.0 
+│ │   │ │ └── is-stream@1.0.1 
+│ │   │ ├─┬ through2@0.6.5 
+│ │   │ │ └── readable-stream@1.0.33 
+│ │   │ ├─┬ to-absolute-glob@0.1.1 
+│ │   │ │ └── extend-shallow@2.0.1 
+│ │   │ └── unique-stream@2.2.0 
+│ │   ├─┬ gulp-sourcemaps@1.6.0 
+│ │   │ ├── strip-bom@2.0.0 
+│ │   │ └── vinyl@1.1.0 
+│ │   ├── is-valid-glob@0.3.0 
+│ │   ├─┬ mkdirp@0.5.1 
+│ │   │ └── minimist@0.0.8 
+│ │   ├── object-assign@4.0.1 
+│ │   ├── strip-bom@2.0.0 
+│ │   ├─┬ strip-bom-stream@1.0.0 
+│ │   │ └── strip-bom@2.0.0 
+│ │   ├── through2-filter@2.0.0 
+│ │   └── vinyl@1.1.0 
+│ ├── object-assign@4.0.1 
+│ ├─┬ plur@2.1.1 
+│ │ └── irregular-plurals@1.1.0 
+│ ├─┬ pretty-bytes@2.0.1 
+│ │ ├── get-stdin@4.0.1 
+│ │ └── number-is-nan@1.0.0 
+│ └── through2-concurrent@1.1.0 
+├── gulp-inject@3.0.0 
+├─┬ gulp-jsoncombine@1.0.3 
+│ ├─┬ gulp-util@2.2.20 
+│ │ ├── lodash._reinterpolate@2.4.1 
+│ │ ├─┬ lodash.template@2.4.1 
+│ │ │ ├── lodash.escape@2.4.1 
+│ │ │ ├── lodash.keys@2.4.1 
+│ │ │ └── lodash.templatesettings@2.4.1 
+│ │ ├── minimist@0.2.0 
+│ │ ├─┬ through2@0.5.1 
+│ │ │ ├── readable-stream@1.0.33 
+│ │ │ └── xtend@3.0.0 
+│ │ └── vinyl@0.2.3 
+│ └── through@2.3.8 
+├─┬ gulp-less@3.0.5 
+│ ├─┬ accord@0.20.5 
+│ │ ├── convert-source-map@1.1.2 
+│ │ ├─┬ fobject@0.0.3 
+│ │ │ └── graceful-fs@3.0.8 
+│ │ ├── indx@0.2.3 
+│ │ ├─┬ uglify-js@2.6.1 
+│ │ │ ├── async@0.2.10 
+│ │ │ └─┬ yargs@3.10.0 
+│ │ │   ├── cliui@2.1.0 
+│ │ │   └── window-size@0.1.0 
+│ │ └── when@3.7.5 
+│ ├─┬ less@2.5.3 
+│ │ ├─┬ errno@0.1.4 
+│ │ │ └── prr@0.0.0 
+│ │ ├── graceful-fs@3.0.8 
+│ │ ├── image-size@0.3.5 
+│ │ ├─┬ mkdirp@0.5.1 
+│ │ │ └── minimist@0.0.8 
+│ │ ├─┬ promise@6.1.0 
+│ │ │ └── asap@1.0.0 
+│ │ └─┬ source-map@0.4.4 
+│ │   └── amdefine@1.0.0 
+│ └── object-assign@4.0.1 
+├─┬ gulp-load-plugins@1.1.0 
+│ ├─┬ findup-sync@0.2.1 
+│ │ └── glob@4.3.5 
+│ ├─┬ multimatch@2.0.0 
+│ │ └── array-union@1.0.1 
+│ └── resolve@1.1.6 
+├─┬ gulp-load-subtasks@1.1.2 
+│ ├─┬ glob@5.0.15 
+│ │ ├─┬ inflight@1.0.4 
+│ │ │ └── wrappy@1.0.1 
+│ │ ├── inherits@2.0.1 
+│ │ └── once@1.3.3 
+│ └─┬ path-ends-with@0.2.3 
+│   ├── ends-with@0.2.0 
+│   └── normalize-path@2.0.1 
+├─┬ gulp-minify-html@1.0.4 
+│ ├─┬ minimize@1.7.4 
+│ │ ├── argh@0.1.4 
+│ │ ├── async@1.4.2 
+│ │ ├─┬ cli-color@1.0.0 
+│ │ │ ├── ansi-regex@1.1.1 
+│ │ │ ├── d@0.1.1 
+│ │ │ ├─┬ es5-ext@0.10.9 
+│ │ │ │ ├── es6-iterator@2.0.0 
+│ │ │ │ └── es6-symbol@3.0.1 
+│ │ │ ├─┬ es6-iterator@0.1.3 
+│ │ │ │ └── es6-symbol@2.0.1 
+│ │ │ ├─┬ memoizee@0.3.9 
+│ │ │ │ ├─┬ es6-weak-map@0.1.4 
+│ │ │ │ │ └── es6-symbol@2.0.1 
+│ │ │ │ ├── event-emitter@0.3.4 
+│ │ │ │ ├── lru-queue@0.1.0 
+│ │ │ │ └── next-tick@0.2.2 
+│ │ │ └── timers-ext@0.1.0 
+│ │ ├─┬ diagnostics@1.0.1 
+│ │ │ ├─┬ colorspace@1.0.1 
+│ │ │ │ ├─┬ color@0.8.0 
+│ │ │ │ │ ├── color-convert@0.5.3 
+│ │ │ │ │ └─┬ color-string@0.3.0 
+│ │ │ │ │   └── color-name@1.0.1 
+│ │ │ │ └── text-hex@0.0.0 
+│ │ │ ├─┬ enabled@1.0.1 
+│ │ │ │ └── env-variable@0.0.3 
+│ │ │ └─┬ kuler@0.0.0 
+│ │ │   └── colornames@0.0.2 
+│ │ ├── emits@3.0.0 
+│ │ ├─┬ htmlparser2@3.8.3 
+│ │ │ ├── domutils@1.5.1 
+│ │ │ ├── entities@1.0.0 
+│ │ │ └── readable-stream@1.1.13 
+│ │ └── node-uuid@1.4.7 
+│ └─┬ through2@0.6.5 
+│   └── readable-stream@1.0.33 
+├─┬ gulp-ng-annotate@1.1.0 
+│ ├─┬ bufferstreams@0.0.2 
+│ │ └── readable-stream@1.1.13 
+│ ├── merge@1.2.0 
+│ ├─┬ ng-annotate@1.0.2 
+│ │ ├── acorn@2.1.0 
+│ │ ├── alter@0.2.0 
+│ │ ├── convert-source-map@1.0.0 
+│ │ ├─┬ optimist@0.6.1 
+│ │ │ ├── minimist@0.0.10 
+│ │ │ └── wordwrap@0.0.2 
+│ │ ├─┬ ordered-ast-traverse@1.1.1 
+│ │ │ └── ordered-esprima-props@1.1.0 
+│ │ ├── simple-fmt@0.1.0 
+│ │ ├── simple-is@0.2.0 
+│ │ ├── source-map@0.4.4 
+│ │ ├── stable@0.1.5 
+│ │ ├── stringmap@0.2.2 
+│ │ ├── stringset@0.2.1 
+│ │ └── tryor@0.1.2 
+│ ├─┬ through2@0.4.2 
+│ │ ├── readable-stream@1.0.33 
+│ │ └─┬ xtend@2.1.2 
+│ │   └── object-keys@0.4.0 
+│ └─┬ vinyl-sourcemaps-apply@0.1.4 
+│   └── source-map@0.1.43 
+├─┬ gulp-nodemon@2.0.4 
+│ ├── colors@1.1.2 
+│ └─┬ nodemon@1.8.1 
+│   ├── es6-promise@3.0.2 
+│   ├── lodash.defaults@3.1.2 
+│   ├── minimatch@3.0.0 
+│   ├── ps-tree@1.0.1 
+│   ├─┬ touch@1.0.0 
+│   │ └── nopt@1.0.10 
+│   ├── undefsafe@0.0.3 
+│   └─┬ update-notifier@0.5.0 
+│     ├─┬ chalk@1.1.1 
+│     │ ├── ansi-styles@2.1.0 
+│     │ ├─┬ has-ansi@2.0.0 
+│     │ │ └── ansi-regex@2.0.0 
+│     │ ├── strip-ansi@3.0.0 
+│     │ └── supports-color@2.0.0 
+│     ├─┬ configstore@1.3.0 
+│     │ ├─┬ mkdirp@0.5.1 
+│     │ │ └── minimist@0.0.8 
+│     │ ├── object-assign@4.0.1 
+│     │ ├── os-tmpdir@1.0.1 
+│     │ ├── osenv@0.1.3 
+│     │ ├─┬ write-file-atomic@1.1.4 
+│     │ │ ├── imurmurhash@0.1.4 
+│     │ │ └── slide@1.1.6 
+│     │ └── xdg-basedir@2.0.0 
+│     ├── is-npm@1.0.0 
+│     ├─┬ latest-version@1.0.1 
+│     │ └─┬ package-json@1.2.0 
+│     │   ├─┬ got@3.3.1 
+│     │   │ ├── infinity-agent@2.0.3 
+│     │   │ ├── is-redirect@1.0.0 
+│     │   │ ├── lowercase-keys@1.0.0 
+│     │   │ ├── nested-error-stacks@1.0.2 
+│     │   │ ├── prepend-http@1.0.3 
+│     │   │ └── timed-out@2.0.0 
+│     │   └─┬ registry-url@3.0.3 
+│     │     └─┬ rc@1.1.5 
+│     │       ├── deep-extend@0.4.0 
+│     │       ├── ini@1.3.4 
+│     │       └── strip-json-comments@1.0.4 
+│     ├─┬ semver-diff@2.1.0 
+│     │ └── semver@5.1.0 
+│     └─┬ string-length@1.0.1 
+│       └─┬ strip-ansi@3.0.0 
+│         └── ansi-regex@2.0.0 
+├─┬ gulp-order@1.1.1 
+│ └─┬ minimatch@0.2.14 
+│   ├── lru-cache@2.7.3 
+│   └── sigmund@1.0.1 
+├─┬ gulp-task-listing@1.0.1 
+│ └─┬ chalk@0.5.1 
+│   ├── ansi-styles@1.1.0 
+│   ├─┬ has-ansi@0.1.0 
+│   │ └── ansi-regex@0.2.1 
+│   ├── strip-ansi@0.3.0 
+│   └── supports-color@0.2.0 
+├─┬ gulp-uglify@1.5.1 
+│ ├── deap@1.0.0 
+│ ├─┬ fancy-log@1.1.0 
+│ │ └─┬ chalk@1.1.1 
+│ │   ├── ansi-styles@2.1.0 
+│ │   ├─┬ has-ansi@2.0.0 
+│ │   │ └── ansi-regex@2.0.0 
+│ │   ├── strip-ansi@3.0.0 
+│ │   └── supports-color@2.0.0 
+│ ├─┬ isobject@2.0.0 
+│ │ └── isarray@0.0.1 
+│ ├─┬ uglify-js@2.6.0 
+│ │ ├── async@0.2.10 
+│ │ ├── uglify-to-browserify@1.0.2 
+│ │ └─┬ yargs@3.10.0 
+│ │   ├─┬ cliui@2.1.0 
+│ │   │ ├─┬ center-align@0.1.2 
+│ │   │ │ └── align-text@0.1.3 
+│ │   │ └── right-align@0.1.3 
+│ │   └── window-size@0.1.0 
+│ └── uglify-save-license@0.4.1 
+├─┬ gulp-util@3.0.7 
+│ ├── array-differ@1.0.0 
+│ ├── array-uniq@1.0.2 
+│ ├── beeper@1.1.0 
+│ ├─┬ chalk@1.1.1 
+│ │ ├── ansi-styles@2.1.0 
+│ │ ├─┬ has-ansi@2.0.0 
+│ │ │ └── ansi-regex@2.0.0 
+│ │ ├── strip-ansi@3.0.0 
+│ │ └── supports-color@2.0.0 
+│ ├── dateformat@1.0.12 
+│ ├─┬ gulplog@1.0.0 
+│ │ └── glogg@1.0.0 
+│ ├─┬ has-gulplog@0.1.0 
+│ │ └── sparkles@1.0.0 
+│ ├── lodash._reescape@3.0.0 
+│ ├── lodash._reevaluate@3.0.0 
+│ ├── lodash._reinterpolate@3.0.0 
+│ ├─┬ lodash.template@3.6.2 
+│ │ ├── lodash._basecopy@3.0.1 
+│ │ ├── lodash._basetostring@3.0.1 
+│ │ ├── lodash._basevalues@3.0.0 
+│ │ ├── lodash._isiterateecall@3.0.9 
+│ │ ├── lodash.escape@3.0.0 
+│ │ ├── lodash.keys@3.1.2 
+│ │ ├── lodash.restparam@3.6.1 
+│ │ └── lodash.templatesettings@3.1.0 
+│ ├─┬ multipipe@0.1.2 
+│ │ └─┬ duplexer2@0.0.2 
+│ │   └── readable-stream@1.1.13 
+│ ├── object-assign@3.0.0 
+│ ├── replace-ext@0.0.1 
+│ └─┬ vinyl@0.5.3 
+│   ├── clone@1.0.2 
+│   └── clone-stats@0.0.1 
+├─┬ helmet@0.14.0 
+│ ├── depd@1.1.0 
+│ ├── dont-sniff-mimetype@0.1.0 
+│ ├─┬ frameguard@0.2.2 
+│ │ └── lodash.isstring@3.0.1 
+│ ├── helmet-crossdomain@0.1.0 
+│ ├─┬ helmet-csp@0.3.0 
+│ │ ├── camelize@1.0.0 
+│ │ ├─┬ content-security-policy-builder@0.2.0 
+│ │ │ └── dashify@0.1.0 
+│ │ ├─┬ lodash.pick@3.1.0 
+│ │ │ ├── lodash._baseflatten@3.1.4 
+│ │ │ ├── lodash._bindcallback@3.0.1 
+│ │ │ ├── lodash._pickbyarray@3.0.2 
+│ │ │ └── lodash._pickbycallback@3.0.0 
+│ │ └── platform@1.3.0 
+│ ├── hide-powered-by@0.1.0 
+│ ├── hpkp@0.2.0 
+│ ├─┬ hsts@0.2.0 
+│ │ └── core-util-is@1.0.1 
+│ ├── ienoopen@0.1.0 
+│ ├── nocache@0.4.0 
+│ └── x-xss-protection@0.2.0 
+├── lodash@3.10.1 
+├─┬ morgan@1.6.1 
+│ └── basic-auth@1.0.3 
+├── run-sequence@1.1.5 
+├─┬ serve-favicon@2.3.0 
+│ └── ms@0.7.1 
+├─┬ wiredep@2.2.2 
+│ ├─┬ bower-config@0.5.2 
+│ │ ├── graceful-fs@2.0.3 
+│ │ ├── mout@0.9.1 
+│ │ └── osenv@0.0.3 
+│ ├── glob@4.5.3 
+│ ├── lodash@2.4.2 
+│ ├── propprop@0.3.0 
+│ └─┬ through2@0.6.5 
+│   └── readable-stream@1.0.33 
+└─┬ yargs@3.31.0 
+  ├── camelcase@2.0.1 
+  ├─┬ cliui@3.1.0 
+  │ ├─┬ strip-ansi@3.0.0 
+  │ │ └── ansi-regex@2.0.0 
+  │ └── wrap-ansi@1.0.0 
+  ├── decamelize@1.1.1 
+  ├─┬ os-locale@1.4.0 
+  │ └─┬ lcid@1.0.0 
+  │   └── invert-kv@1.0.0 
+  ├─┬ string-width@1.0.1 
+  │ ├── code-point-at@1.0.0 
+  │ ├── is-fullwidth-code-point@1.0.0 
+  │ └─┬ strip-ansi@3.0.0 
+  │   └── ansi-regex@2.0.0 
+  ├── window-size@0.1.4 
+  └── y18n@3.2.0 
+
+npm WARN optional Skipping failed optional dependency /chokidar/fsevents:
+npm WARN notsup Not compatible with your operating system or architecture: fsevents@1.0.5
+npm WARN ext-events-management@0.0.1 No license field.
+npm WARN In dom-serializer@0.1.0 replacing bundled version of domelementtype with domelementtype@1.1.3
+npm WARN In configstore@1.3.0 replacing bundled version of object-assign with object-assign@4.0.1
+npm WARN In configstore@1.3.0 replacing bundled version of mkdirp with mkdirp@0.5.1
+npm WARN In configstore@1.3.0 replacing bundled version of minimist with minimist@0.0.8
+npm WARN In gulp-load-plugins@1.1.0 replacing bundled version of findup-sync with findup-sync@0.2.1
+npm WARN In gulp-load-plugins@1.1.0 replacing bundled version of glob with glob@4.3.5
+npm WARN In clap@1.0.9 replacing bundled version of chalk with chalk@1.1.1
+npm WARN In clap@1.0.9 replacing bundled version of has-ansi with has-ansi@2.0.0
+npm WARN In clap@1.0.9 replacing bundled version of ansi-styles with ansi-styles@2.1.0
+npm WARN In clap@1.0.9 replacing bundled version of strip-ansi with strip-ansi@3.0.0
+npm WARN In clap@1.0.9 replacing bundled version of supports-color with supports-color@2.0.0
+npm WARN In clap@1.0.9 replacing bundled version of ansi-regex with ansi-regex@2.0.0
+npm WARN In is-number@2.1.0 replacing bundled version of kind-of with kind-of@3.0.2
+npm WARN In registry-url@3.0.3 replacing bundled version of rc with rc@1.1.5
+npm WARN In registry-url@3.0.3 replacing bundled version of strip-json-comments with strip-json-comments@1.0.4
+npm WARN In registry-url@3.0.3 replacing bundled version of deep-extend with deep-extend@0.4.0
+npm WARN In semver-diff@2.1.0 replacing bundled version of semver with semver@5.1.0
+npm WARN In semver-truncate@1.1.0 replacing bundled version of semver with semver@5.1.0
+npm WARN In strip-bom-stream@1.0.0 replacing bundled version of strip-bom with strip-bom@2.0.0
+npm WARN In redent@1.0.0 replacing bundled version of indent-string with indent-string@2.1.0
+npm WARN In redent@1.0.0 replacing bundled version of repeating with repeating@2.0.0
+npm WARN In string-length@1.0.1 replacing bundled version of strip-ansi with strip-ansi@3.0.0
+npm WARN In string-length@1.0.1 replacing bundled version of ansi-regex with ansi-regex@2.0.0
+npm WARN In vinyl-assign@1.2.1 replacing bundled version of object-assign with object-assign@4.0.1
+npm WARN In exec-series@1.0.2 replacing bundled version of async-each-series with async-each-series@1.1.0
+npm WARN In lodash._reunescapedhtml@2.4.1 replacing bundled version of lodash.keys with lodash.keys@2.4.1
+npm WARN In lodash.values@2.4.1 replacing bundled version of lodash.keys with lodash.keys@2.4.1
+npm WARN In lodash.defaults@2.4.1 replacing bundled version of lodash.keys with lodash.keys@2.4.1
+npm WARN In load-json-file@1.1.0 replacing bundled version of strip-bom with strip-bom@2.0.0
+npm WARN In randomatic@1.1.3 replacing bundled version of kind-of with kind-of@3.0.2
+npm WARN In fancy-log@1.1.0 replacing bundled version of chalk with chalk@1.1.1
+npm WARN In fancy-log@1.1.0 replacing bundled version of ansi-styles with ansi-styles@2.1.0
+npm WARN In fancy-log@1.1.0 replacing bundled version of has-ansi with has-ansi@2.0.0
+npm WARN In fancy-log@1.1.0 replacing bundled version of strip-ansi with strip-ansi@3.0.0
+npm WARN In fancy-log@1.1.0 replacing bundled version of supports-color with supports-color@2.0.0
+npm WARN In fancy-log@1.1.0 replacing bundled version of ansi-regex with ansi-regex@2.0.0
+npm WARN In squeak@1.3.0 replacing bundled version of chalk with chalk@1.1.1
+npm WARN In squeak@1.3.0 replacing bundled version of has-ansi with has-ansi@2.0.0
+npm WARN In squeak@1.3.0 replacing bundled version of strip-ansi with strip-ansi@3.0.0
+npm WARN In squeak@1.3.0 replacing bundled version of ansi-styles with ansi-styles@2.1.0
+npm WARN In squeak@1.3.0 replacing bundled version of supports-color with supports-color@2.0.0
+npm WARN In squeak@1.3.0 replacing bundled version of ansi-regex with ansi-regex@2.0.0
+npm WARN In sum-up@1.0.2 replacing bundled version of chalk with chalk@1.1.1
+npm WARN In sum-up@1.0.2 replacing bundled version of ansi-styles with ansi-styles@2.1.0
+npm WARN In sum-up@1.0.2 replacing bundled version of has-ansi with has-ansi@2.0.0
+npm WARN In sum-up@1.0.2 replacing bundled version of strip-ansi with strip-ansi@3.0.0
+npm WARN In sum-up@1.0.2 replacing bundled version of supports-color with supports-color@2.0.0
+npm WARN In sum-up@1.0.2 replacing bundled version of ansi-regex with ansi-regex@2.0.0
+npm WARN In read-all-stream@3.0.1 replacing bundled version of pinkie-promise with pinkie-promise@1.0.0
+npm WARN In read-all-stream@3.0.1 replacing bundled version of pinkie with pinkie@1.0.0
+npm WARN In string-width@1.0.1 replacing bundled version of strip-ansi with strip-ansi@3.0.0
+npm WARN In string-width@1.0.1 replacing bundled version of ansi-regex with ansi-regex@2.0.0
+npm WARN In buffer-to-vinyl@1.1.0 replacing bundled version of vinyl with vinyl@1.1.0
+npm WARN In package-json@1.2.0 replacing bundled version of got with got@3.3.1
+npm WARN In got@5.2.0 replacing bundled version of object-assign with object-assign@4.0.1
+npm WARN In update-notifier@0.5.0 replacing bundled version of chalk with chalk@1.1.1
+npm WARN In update-notifier@0.5.0 replacing bundled version of has-ansi with has-ansi@2.0.0
+npm WARN In update-notifier@0.5.0 replacing bundled version of strip-ansi with strip-ansi@3.0.0
+npm WARN In update-notifier@0.5.0 replacing bundled version of ansi-styles with ansi-styles@2.1.0
+npm WARN In update-notifier@0.5.0 replacing bundled version of supports-color with supports-color@2.0.0
+npm WARN In update-notifier@0.5.0 replacing bundled version of ansi-regex with ansi-regex@2.0.0
+npm WARN In gulp-sourcemaps@1.6.0 replacing bundled version of strip-bom with strip-bom@2.0.0
+npm WARN In gulp-sourcemaps@1.6.0 replacing bundled version of vinyl with vinyl@1.1.0
+npm WARN In glob-stream@5.2.0 replacing bundled version of through2 with through2@0.6.5
+npm WARN In glob-stream@5.2.0 replacing bundled version of readable-stream with readable-stream@1.0.33
+npm WARN In gulp-concat@2.6.0 replacing bundled version of through2 with through2@0.6.5
+npm WARN In gulp-concat@2.6.0 replacing bundled version of readable-stream with readable-stream@1.0.33
+npm WARN In glob-stream@3.1.18 replacing bundled version of through2 with through2@0.6.5
+npm WARN In glob-stream@3.1.18 replacing bundled version of glob with glob@4.5.3
+npm WARN In glob-stream@3.1.18 replacing bundled version of readable-stream with readable-stream@1.0.33
+npm WARN In glob-stream@5.2.0 replacing bundled version of through2 with through2@0.6.5
+npm WARN In glob-stream@5.2.0 replacing bundled version of readable-stream with readable-stream@1.0.33
+npm WARN In glob-stream@5.2.0 replacing bundled version of through2 with through2@0.6.5
+npm WARN In glob-stream@5.2.0 replacing bundled version of readable-stream with readable-stream@1.0.33
+npm WARN In decompress-targz@3.1.0 replacing bundled version of object-assign with object-assign@2.1.1
+npm WARN In decompress-targz@3.1.0 replacing bundled version of through2 with through2@0.6.5
+npm WARN In decompress-targz@3.1.0 replacing bundled version of vinyl with vinyl@0.4.6
+npm WARN In decompress-targz@3.1.0 replacing bundled version of readable-stream with readable-stream@1.0.33
+npm WARN In decompress-targz@3.1.0 replacing bundled version of clone with clone@0.2.0
+npm WARN In decompress-tarbz2@3.1.0 replacing bundled version of through2 with through2@0.6.5
+npm WARN In decompress-tarbz2@3.1.0 replacing bundled version of object-assign with object-assign@2.1.1
+npm WARN In decompress-tarbz2@3.1.0 replacing bundled version of vinyl with vinyl@0.4.6
+npm WARN In decompress-tarbz2@3.1.0 replacing bundled version of readable-stream with readable-stream@1.0.33
+npm WARN In decompress-tarbz2@3.1.0 replacing bundled version of clone with clone@0.2.0
+npm WARN In decompress-tar@3.1.0 replacing bundled version of through2 with through2@0.6.5
+npm WARN In decompress-tar@3.1.0 replacing bundled version of vinyl with vinyl@0.4.6
+npm WARN In decompress-tar@3.1.0 replacing bundled version of object-assign with object-assign@2.1.1
+npm WARN In decompress-tar@3.1.0 replacing bundled version of readable-stream with readable-stream@1.0.33
+npm WARN In decompress-tar@3.1.0 replacing bundled version of clone with clone@0.2.0
+npm WARN In decompress-unzip@3.4.0 replacing bundled version of vinyl with vinyl@1.1.0
+npm WARN In decompress@3.0.0 replacing bundled version of vinyl-fs with vinyl-fs@2.2.1
+npm WARN In decompress@3.0.0 replacing bundled version of object-assign with object-assign@4.0.1
+npm WARN In decompress@3.0.0 replacing bundled version of strip-bom with strip-bom@2.0.0
+npm WARN In decompress@3.0.0 replacing bundled version of vinyl with vinyl@1.1.0
+npm WARN In decompress@3.0.0 replacing bundled version of mkdirp with mkdirp@0.5.1
+npm WARN In decompress@3.0.0 replacing bundled version of through2 with through2@0.6.5
+npm WARN In decompress@3.0.0 replacing bundled version of readable-stream with readable-stream@1.0.33
+npm WARN In decompress@3.0.0 replacing bundled version of unique-stream with unique-stream@2.2.0
+npm WARN In decompress@3.0.0 replacing bundled version of ordered-read-streams with ordered-read-streams@0.3.0
+npm WARN In decompress@3.0.0 replacing bundled version of minimist with minimist@0.0.8
+npm WARN In download@4.4.3 replacing bundled version of object-assign with object-assign@4.0.1
+npm WARN In download@4.4.3 replacing bundled version of vinyl with vinyl@1.1.0
+npm WARN In download@4.4.3 replacing bundled version of vinyl-fs with vinyl-fs@2.2.1
+npm WARN In download@4.4.3 replacing bundled version of through2 with through2@0.6.5
+npm WARN In download@4.4.3 replacing bundled version of readable-stream with readable-stream@1.0.33
+npm WARN In download@4.4.3 replacing bundled version of mkdirp with mkdirp@0.5.1
+npm WARN In download@4.4.3 replacing bundled version of strip-bom with strip-bom@2.0.0
+npm WARN In download@4.4.3 replacing bundled version of unique-stream with unique-stream@2.2.0
+npm WARN In download@4.4.3 replacing bundled version of ordered-read-streams with ordered-read-streams@0.3.0
+npm WARN In download@4.4.3 replacing bundled version of minimist with minimist@0.0.8
+npm WARN In imagemin-gifsicle@4.2.0 replacing bundled version of through2 with through2@0.6.5
+npm WARN In imagemin-gifsicle@4.2.0 replacing bundled version of readable-stream with readable-stream@1.0.33
+npm WARN In imagemin@4.0.0 replacing bundled version of vinyl-fs with vinyl-fs@2.2.1
+npm WARN In imagemin@4.0.0 replacing bundled version of mkdirp with mkdirp@0.5.1
+npm WARN In imagemin@4.0.0 replacing bundled version of strip-bom with strip-bom@2.0.0
+npm WARN In imagemin@4.0.0 replacing bundled version of vinyl with vinyl@1.1.0
+npm WARN In imagemin@4.0.0 replacing bundled version of through2 with through2@0.6.5
+npm WARN In imagemin@4.0.0 replacing bundled version of readable-stream with readable-stream@1.0.33
+npm WARN In imagemin@4.0.0 replacing bundled version of object-assign with object-assign@4.0.1
+npm WARN In imagemin@4.0.0 replacing bundled version of ordered-read-streams with ordered-read-streams@0.3.0
+npm WARN In imagemin@4.0.0 replacing bundled version of unique-stream with unique-stream@2.2.0
+npm WARN In imagemin@4.0.0 replacing bundled version of minimist with minimist@0.0.8
+npm WARN In gulp-imagemin@2.4.0 replacing bundled version of chalk with chalk@1.1.1
+npm WARN In gulp-imagemin@2.4.0 replacing bundled version of object-assign with object-assign@4.0.1
+npm WARN In gulp-imagemin@2.4.0 replacing bundled version of has-ansi with has-ansi@2.0.0
+npm WARN In gulp-imagemin@2.4.0 replacing bundled version of strip-ansi with strip-ansi@3.0.0
+npm WARN In gulp-imagemin@2.4.0 replacing bundled version of supports-color with supports-color@2.0.0
+npm WARN In gulp-imagemin@2.4.0 replacing bundled version of ansi-styles with ansi-styles@2.1.0
+npm WARN In gulp-imagemin@2.4.0 replacing bundled version of ansi-regex with ansi-regex@2.0.0
+npm WARN In imagemin-optipng@4.3.0 replacing bundled version of through2 with through2@0.6.5
+npm WARN In imagemin-optipng@4.3.0 replacing bundled version of readable-stream with readable-stream@1.0.33
+npm WARN In randomatic@1.1.3 replacing bundled version of is-number with is-number@2.1.0
+npm WARN In decompress@3.0.0 replacing bundled version of glob-stream with glob-stream@5.2.0
+npm WARN In download@4.4.3 replacing bundled version of glob-stream with glob-stream@5.2.0
+npm WARN In imagemin@4.0.0 replacing bundled version of glob-stream with glob-stream@5.2.0
+npm WARN In socket.io-adapter@0.3.1 replacing bundled version of debug with debug@1.0.2
+npm WARN In socket.io-adapter@0.3.1 replacing bundled version of debug with debug@0.7.4
+npm WARN In socket.io-adapter@0.3.1 replacing bundled version of ms with ms@0.6.2
+npm WARN In socket.io-adapter@0.3.1 replacing bundled version of socket.io-parser with socket.io-parser@2.2.2
+npm WARN In gulp-less@3.0.5 replacing bundled version of object-assign with object-assign@4.0.1
+npm WARN In through2@0.4.2 replacing bundled version of xtend with xtend@2.1.2
+npm WARN In portscanner@1.0.0 replacing bundled version of async with async@0.1.15
+npm WARN In opn@3.0.3 replacing bundled version of object-assign with object-assign@4.0.1
+npm WARN In strip-dirs@1.1.1 replacing bundled version of chalk with chalk@1.1.1
+npm WARN In strip-dirs@1.1.1 replacing bundled version of ansi-styles with ansi-styles@2.1.0
+npm WARN In strip-dirs@1.1.1 replacing bundled version of strip-ansi with strip-ansi@3.0.0
+npm WARN In strip-dirs@1.1.1 replacing bundled version of supports-color with supports-color@2.0.0
+npm WARN In strip-dirs@1.1.1 replacing bundled version of has-ansi with has-ansi@2.0.0
+npm WARN In strip-dirs@1.1.1 replacing bundled version of ansi-regex with ansi-regex@2.0.0
+npm WARN In find-versions@1.2.1 replacing bundled version of meow with meow@3.6.0
+npm WARN In find-versions@1.2.1 replacing bundled version of camelcase-keys with camelcase-keys@2.0.0
+npm WARN In find-versions@1.2.1 replacing bundled version of object-assign with object-assign@4.0.1
+npm WARN In find-versions@1.2.1 replacing bundled version of camelcase with camelcase@2.0.1
+npm WARN In gulp-clean@0.3.1 replacing bundled version of xtend with xtend@2.1.2
+npm WARN In gulp-clean@0.3.1 replacing bundled version of through2 with through2@0.5.1
+npm WARN In gulp-clean@0.3.1 replacing bundled version of lodash._reinterpolate with lodash._reinterpolate@2.4.1
+npm WARN In gulp-clean@0.3.1 replacing bundled version of lodash.template with lodash.template@2.4.1
+npm WARN In gulp-clean@0.3.1 replacing bundled version of minimist with minimist@0.2.0
+npm WARN In gulp-clean@0.3.1 replacing bundled version of vinyl with vinyl@0.2.3
+npm WARN In gulp-clean@0.3.1 replacing bundled version of lodash.keys with lodash.keys@2.4.1
+npm WARN In gulp-clean@0.3.1 replacing bundled version of lodash.templatesettings with lodash.templatesettings@2.4.1
+npm WARN In gulp-clean@0.3.1 replacing bundled version of lodash.escape with lodash.escape@2.4.1
+npm WARN In gulp-clean@0.3.1 replacing bundled version of readable-stream with readable-stream@1.0.33
+npm WARN In gulp-clean@0.3.1 replacing bundled version of xtend with xtend@3.0.0
+npm WARN In gulp-clean@0.3.1 replacing bundled version of object-keys with object-keys@0.4.0
+npm WARN In gulp-clean@0.3.1 replacing bundled version of through2 with through2@0.4.2
+npm WARN In gulp-clean@0.3.1 replacing bundled version of gulp-util with gulp-util@2.2.20
+npm WARN In gulp-ng-annotate@1.1.0 replacing bundled version of through2 with through2@0.4.2
+npm WARN In gulp-ng-annotate@1.1.0 replacing bundled version of vinyl-sourcemaps-apply with vinyl-sourcemaps-apply@0.1.4
+npm WARN In gulp-ng-annotate@1.1.0 replacing bundled version of readable-stream with readable-stream@1.0.33
+npm WARN In gulp-ng-annotate@1.1.0 replacing bundled version of xtend with xtend@2.1.2
+npm WARN In gulp-ng-annotate@1.1.0 replacing bundled version of object-keys with object-keys@0.4.0
+npm WARN In gulp-ng-annotate@1.1.0 replacing bundled version of source-map with source-map@0.1.43
+npm WARN In gulp-cdnify@1.0.4 replacing bundled version of through2 with through2@0.6.5
+npm WARN In gulp-cdnify@1.0.4 replacing bundled version of path with path@0.11.14
+npm WARN In gulp-cdnify@1.0.4 replacing bundled version of readable-stream with readable-stream@1.0.33
+npm WARN In stream-combiner2@1.1.1 replacing bundled version of duplexer2 with duplexer2@0.1.4
+npm WARN In fobject@0.0.3 replacing bundled version of graceful-fs with graceful-fs@3.0.8
+npm WARN In tar-stream@1.3.1 replacing bundled version of end-of-stream with end-of-stream@1.1.0
+npm WARN In bufferstreams@0.0.2 replacing bundled version of readable-stream with readable-stream@1.1.13
+npm WARN In gulp-order@1.1.1 replacing bundled version of minimatch with minimatch@0.2.14
+npm WARN In gulp-uglify@1.5.1 replacing bundled version of isobject with isobject@2.0.0
+npm WARN In gulp-uglify@1.5.1 replacing bundled version of uglify-js with uglify-js@2.6.0
+npm WARN In gulp-uglify@1.5.1 replacing bundled version of yargs with yargs@3.10.0
+npm WARN In gulp-uglify@1.5.1 replacing bundled version of async with async@0.2.10
+npm WARN In gulp-uglify@1.5.1 replacing bundled version of window-size with window-size@0.1.0
+npm WARN In gulp-uglify@1.5.1 replacing bundled version of cliui with cliui@2.1.0
+npm WARN In duplexify@3.4.2 replacing bundled version of end-of-stream with end-of-stream@1.0.0
+npm WARN In duplexer2@0.0.2 replacing bundled version of readable-stream with readable-stream@1.1.13
+npm WARN In gulp-minify-html@1.0.4 replacing bundled version of through2 with through2@0.6.5
+npm WARN In gulp-minify-html@1.0.4 replacing bundled version of readable-stream with readable-stream@1.0.33
+npm WARN In touch@1.0.0 replacing bundled version of nopt with nopt@1.0.10
+npm WARN In gulp-match@1.0.0 replacing bundled version of minimatch with minimatch@3.0.0
+npm WARN In cliui@3.1.0 replacing bundled version of strip-ansi with strip-ansi@3.0.0
+npm WARN In cliui@3.1.0 replacing bundled version of ansi-regex with ansi-regex@2.0.0
+npm WARN In wiredep@2.2.2 replacing bundled version of through2 with through2@0.6.5
+npm WARN In wiredep@2.2.2 replacing bundled version of glob with glob@4.5.3
+npm WARN In wiredep@2.2.2 replacing bundled version of lodash with lodash@2.4.2
+npm WARN In wiredep@2.2.2 replacing bundled version of readable-stream with readable-stream@1.0.33
+npm WARN In seek-bzip@1.0.5 replacing bundled version of commander with commander@2.8.1
+npm WARN In foxy@11.1.4 replacing bundled version of resp-modifier with resp-modifier@4.0.4
+npm WARN In htmlparser2@3.9.0 replacing bundled version of domutils with domutils@1.5.1
+npm WARN In localtunnel@1.8.0 replacing bundled version of yargs with yargs@3.29.0
+npm WARN In socket.io-parser@2.2.2 replacing bundled version of debug with debug@0.7.4
+npm WARN In socket.io@1.3.7 replacing bundled version of debug with debug@2.1.0
+npm WARN In socket.io@1.3.7 replacing bundled version of ms with ms@0.6.2
+npm WARN In helmet@0.14.0 replacing bundled version of depd with depd@1.1.0
+npm WARN In rc@0.5.5 replacing bundled version of minimist with minimist@0.0.10
+npm WARN In gulp-jsoncombine@1.0.3 replacing bundled version of gulp-util with gulp-util@2.2.20
+npm WARN In gulp-jsoncombine@1.0.3 replacing bundled version of minimist with minimist@0.2.0
+npm WARN In gulp-jsoncombine@1.0.3 replacing bundled version of vinyl with vinyl@0.2.3
+npm WARN In gulp-jsoncombine@1.0.3 replacing bundled version of through2 with through2@0.5.1
+npm WARN In gulp-jsoncombine@1.0.3 replacing bundled version of lodash._reinterpolate with lodash._reinterpolate@2.4.1
+npm WARN In gulp-jsoncombine@1.0.3 replacing bundled version of lodash.template with lodash.template@2.4.1
+npm WARN In gulp-jsoncombine@1.0.3 replacing bundled version of lodash.templatesettings with lodash.templatesettings@2.4.1
+npm WARN In gulp-jsoncombine@1.0.3 replacing bundled version of lodash.escape with lodash.escape@2.4.1
+npm WARN In gulp-jsoncombine@1.0.3 replacing bundled version of lodash.keys with lodash.keys@2.4.1
+npm WARN In gulp-jsoncombine@1.0.3 replacing bundled version of readable-stream with readable-stream@1.0.33
+npm WARN In gulp-jsoncombine@1.0.3 replacing bundled version of xtend with xtend@3.0.0
+npm WARN In bower-config@0.5.2 replacing bundled version of osenv with osenv@0.0.3
+npm WARN In bower-config@0.5.2 replacing bundled version of graceful-fs with graceful-fs@2.0.3
+npm WARN In gulp@3.9.0 replacing bundled version of chalk with chalk@1.1.1
+npm WARN In gulp@3.9.0 replacing bundled version of has-ansi with has-ansi@2.0.0
+npm WARN In gulp@3.9.0 replacing bundled version of supports-color with supports-color@2.0.0
+npm WARN In gulp@3.9.0 replacing bundled version of strip-ansi with strip-ansi@3.0.0
+npm WARN In gulp@3.9.0 replacing bundled version of ansi-styles with ansi-styles@2.1.0
+npm WARN In gulp@3.9.0 replacing bundled version of ansi-regex with ansi-regex@2.0.0
+npm WARN In socket.io-client@1.3.7 replacing bundled version of debug with debug@0.7.4
+npm WARN In gulp-util@3.0.7 replacing bundled version of chalk with chalk@1.1.1
+npm WARN In gulp-util@3.0.7 replacing bundled version of ansi-styles with ansi-styles@2.1.0
+npm WARN In gulp-util@3.0.7 replacing bundled version of has-ansi with has-ansi@2.0.0
+npm WARN In gulp-util@3.0.7 replacing bundled version of strip-ansi with strip-ansi@3.0.0
+npm WARN In gulp-util@3.0.7 replacing bundled version of supports-color with supports-color@2.0.0
+npm WARN In gulp-util@3.0.7 replacing bundled version of ansi-regex with ansi-regex@2.0.0
+npm WARN In minimize@1.7.4 replacing bundled version of async with async@1.4.2
+npm WARN In minimize@1.7.4 replacing bundled version of htmlparser2 with htmlparser2@3.8.3
+npm WARN In minimize@1.7.4 replacing bundled version of domutils with domutils@1.5.1
+npm WARN In minimize@1.7.4 replacing bundled version of entities with entities@1.0.0
+npm WARN In minimize@1.7.4 replacing bundled version of readable-stream with readable-stream@1.1.13
+npm WARN In vinyl-fs@0.3.14 replacing bundled version of through2 with through2@0.6.5
+npm WARN In vinyl-fs@0.3.14 replacing bundled version of graceful-fs with graceful-fs@3.0.8
+npm WARN In vinyl-fs@0.3.14 replacing bundled version of vinyl with vinyl@0.4.6
+npm WARN In vinyl-fs@0.3.14 replacing bundled version of mkdirp with mkdirp@0.5.1
+npm WARN In vinyl-fs@0.3.14 replacing bundled version of minimist with minimist@0.0.8
+npm WARN In vinyl-fs@0.3.14 replacing bundled version of readable-stream with readable-stream@1.0.33
+npm WARN In vinyl-fs@0.3.14 replacing bundled version of clone with clone@0.2.0
+npm WARN In engine.io@1.5.4 replacing bundled version of debug with debug@1.0.3
+npm WARN In engine.io@1.5.4 replacing bundled version of ms with ms@0.6.2
+npm WARN In liftoff@2.2.0 replacing bundled version of extend with extend@2.0.1
+npm WARN In globule@0.1.0 replacing bundled version of glob with glob@3.1.21
+npm WARN In globule@0.1.0 replacing bundled version of minimatch with minimatch@0.2.14
+npm WARN In globule@0.1.0 replacing bundled version of lodash with lodash@1.0.2
+npm WARN In globule@0.1.0 replacing bundled version of graceful-fs with graceful-fs@1.2.3
+npm WARN In globule@0.1.0 replacing bundled version of inherits with inherits@1.0.2
+npm WARN In express@4.13.3 replacing bundled version of vary with vary@1.0.1
+npm WARN In express@4.13.3 replacing bundled version of accepts with accepts@1.2.13
+npm WARN In express@4.13.3 replacing bundled version of negotiator with negotiator@0.5.3
+npm WARN In engine.io-client@1.5.4 replacing bundled version of parseuri with parseuri@0.0.4
+npm WARN In engine.io-client@1.5.4 replacing bundled version of debug with debug@1.0.4
+npm WARN In engine.io-client@1.5.4 replacing bundled version of ms with ms@0.6.2
+npm WARN In es6-weak-map@0.1.4 replacing bundled version of es6-symbol with es6-symbol@2.0.1
+npm WARN In gulp-util@2.2.20 replacing bundled version of through2 with through2@0.5.1
+npm WARN In request@2.65.0 replacing bundled version of qs with qs@5.2.0
+npm WARN In es6-iterator@0.1.3 replacing bundled version of es6-symbol with es6-symbol@2.0.1
+npm WARN In har-validator@2.0.3 replacing bundled version of chalk with chalk@1.1.1
+npm WARN In har-validator@2.0.3 replacing bundled version of ansi-styles with ansi-styles@2.1.0
+npm WARN In har-validator@2.0.3 replacing bundled version of has-ansi with has-ansi@2.0.0
+npm WARN In har-validator@2.0.3 replacing bundled version of strip-ansi with strip-ansi@3.0.0
+npm WARN In har-validator@2.0.3 replacing bundled version of supports-color with supports-color@2.0.0
+npm WARN In har-validator@2.0.3 replacing bundled version of ansi-regex with ansi-regex@2.0.0
+npm WARN In yargs@3.31.0 replacing bundled version of camelcase with camelcase@2.0.1
+npm WARN In uglify-js@2.6.1 replacing bundled version of async with async@0.2.10
+npm WARN In uglify-js@2.6.1 replacing bundled version of yargs with yargs@3.10.0
+npm WARN In uglify-js@2.6.1 replacing bundled version of window-size with window-size@0.1.0
+npm WARN In uglify-js@2.6.1 replacing bundled version of cliui with cliui@2.1.0
+npm WARN In optimist@0.6.1 replacing bundled version of minimist with minimist@0.0.10
+npm WARN In socket.io-parser@2.2.4 replacing bundled version of debug with debug@0.7.4
+npm WARN In cheerio@0.19.0 replacing bundled version of entities with entities@1.0.0
+npm WARN In cheerio@0.19.0 replacing bundled version of domutils with domutils@1.5.1
+npm WARN In cheerio@0.19.0 replacing bundled version of readable-stream with readable-stream@1.1.13
+npm WARN In cheerio@0.19.0 replacing bundled version of htmlparser2 with htmlparser2@3.8.3
+npm WARN In cli-color@1.0.0 replacing bundled version of ansi-regex with ansi-regex@1.1.1
+npm WARN In nodemon@1.8.1 replacing bundled version of lodash.defaults with lodash.defaults@3.1.2
+npm WARN In nodemon@1.8.1 replacing bundled version of minimatch with minimatch@3.0.0
+npm WARN In postcss@5.0.12 replacing bundled version of supports-color with supports-color@3.1.2
+npm WARN In svgo@0.6.1 replacing bundled version of mkdirp with mkdirp@0.5.1
+npm WARN In svgo@0.6.1 replacing bundled version of minimist with minimist@0.0.8
+npm WARN In htmlparser2@3.8.3 replacing bundled version of entities with entities@1.0.0
+npm WARN In ng-annotate@1.0.2 replacing bundled version of convert-source-map with convert-source-map@1.0.0
+npm WARN In ng-annotate@1.0.2 replacing bundled version of source-map with source-map@0.4.4
+npm WARN In serve-index@1.7.2 replacing bundled version of accepts with accepts@1.2.13
+npm WARN In serve-index@1.7.2 replacing bundled version of negotiator with negotiator@0.5.3
+npm WARN In weinre@2.0.0-pre-I0Z7U9OV replacing bundled version of express with express@2.5.11
+npm WARN In weinre@2.0.0-pre-I0Z7U9OV replacing bundled version of qs with qs@0.4.2
+npm WARN In weinre@2.0.0-pre-I0Z7U9OV replacing bundled version of mime with mime@1.2.4
+npm WARN In weinre@2.0.0-pre-I0Z7U9OV replacing bundled version of connect with connect@1.9.2
+npm WARN In es5-ext@0.10.9 replacing bundled version of es6-iterator with es6-iterator@2.0.0
+npm WARN In less@2.5.3 replacing bundled version of graceful-fs with graceful-fs@3.0.8
+npm WARN In less@2.5.3 replacing bundled version of mkdirp with mkdirp@0.5.1
+npm WARN In less@2.5.3 replacing bundled version of source-map with source-map@0.4.4
+npm WARN In less@2.5.3 replacing bundled version of minimist with minimist@0.0.8
+int
+[15:05:47] Using gulpfile /var/www/ems/events/gulpfile.js
+[15:05:47] Starting 'publish'...
+[15:05:47] Starting 'clean:css'...
+[15:05:47] Cleaning: ./.tmp/app.css,./build/styles/
+[15:05:48] Starting 'clean:fonts'...
+[15:05:48] Cleaning: ./build/fonts
+[15:05:48] Starting 'clean:html'...
+[15:05:48] Cleaning: ./.tmp/templates.js
+[15:05:48] Starting 'clean:images'...
+[15:05:48] Cleaning: ./build/images
+[15:05:48] Starting 'clean:js'...
+[15:05:48] Cleaning: ./.tmp/**/*.js,./build/js/
+[15:05:48] Finished 'clean:css' after 1.33 s
+[15:05:48] Finished 'clean:fonts' after 362 ms
+[15:05:48] Finished 'clean:html' after 357 ms
+[15:05:48] Finished 'clean:images' after 354 ms
+[15:05:48] Finished 'clean:js' after 243 ms
+[15:05:48] Starting 'clean'...
+[15:05:48] Finished 'clean' after 16 μs
+[15:05:48] Starting 'compile:js:config'...
+[15:05:48] compile js config
+[15:05:49] Starting 'compile:css'...
+[15:05:49] Compiling Less --> CSS
+[15:05:58] Finished 'compile:css' after 9.57 s
+[15:05:58] Finished 'compile:js:config' after 10 s
+[15:05:58] Starting 'compile'...
+[15:05:58] Finished 'compile' after 15 μs
+[15:05:58] Starting 'compile:html'...
+[15:05:58] Creating an AngularJS $templateCache
+[15:06:02] Finished 'compile:html' after 3.85 s
+[15:06:02] Starting 'optimize:css:app'...
+[15:06:02] Wire up css into the html, after files are ready
+[15:06:03] Starting 'optimize:css:lib'...
+[15:06:03] Wire up css into the html, after files are ready
+[15:06:03] Starting 'optimize:fonts'...
+[15:06:03] Copying fonts
+[15:06:03] Starting 'optimize:images'...
+[15:06:03] Compressing and copying images
+[15:06:06] Starting 'optimize:js:lib'...
+[15:06:06] Optimize the bower dependencies
+[15:06:06] Starting 'optimize:js:app'...
+[15:06:06] optimize app JS
+[ './client/app/**/*.module.js',
+  './client/app/**/*.js',
+  './.tmp/**/*.js',
+  '!./client/fakes/*.js' ]
+[15:06:16] Finished 'optimize:css:app' after 13 s
+[15:07:31] Finished 'optimize:css:lib' after 1.47 min
+[15:10:31] gulp-imagemin: Minified 4 images (saved 56.4 kB - 20.4%)
+[15:10:31] Finished 'optimize:images' after 4.45 min
+[15:10:31] Finished 'optimize:js:lib' after 4.42 min
+[15:10:31] Finished 'optimize:fonts' after 4.47 min
+[15:10:40] Finished 'optimize:js:app' after 4.55 min
+[15:10:40] Starting 'optimize'...
+[15:10:40] Finished 'optimize' after 88 μs
+[15:10:40] Starting 'inject:html'...
+[15:10:40] Wire up css into the html, after files are ready
+{ jsOrder: 
+   [ '**/configValues.js',
+     '**/app.module.js',
+     '**/*.module.js',
+     '**/*.js' ],
+  appCss: './build/styles/app.css',
+  appJs: './build/js/app.js',
+  libCss: './build/styles/lib.css',
+  libJs: './build/js/lib.js',
+  index: './build/' }
+[15:10:41] gulp-inject 1 files into index.html.
+[15:10:41] gulp-inject 1 files into index.html.
+[15:10:41] gulp-inject 1 files into index.html.
+[15:10:41] gulp-inject 1 files into index.html.
+[15:10:41] Finished 'inject:html' after 720 ms
+[15:10:41] Starting 'inject'...
+[15:10:41] Finished 'inject' after 20 μs
+[15:10:41] Starting 'cdnify'...
+[15:10:41] cdnify
+[15:10:44] Changed HTML file: "/var/www/ems/events/build/index.html"
+[15:10:44] Finished 'cdnify' after 2.82 s
+[15:10:44] Finished 'publish' after 4.93 min
+[PM2] Stopping PM2...
+[PM2][WARN] No process found
+[PM2] All processes have been stopped and deleted
+[PM2] PM2 stopped
+[PM2] Spawning PM2 daemon
+[PM2] PM2 Successfully daemonized
+[PM2] Starting /var/www/ems/events/server/app.js in fork_mode (1 instance)
+[PM2] Done.
+┌──────────┬────┬──────┬───────┬────────┬─────────┬────────┬────────────┬──────────┐
+│ App name │ id │ mode │ pid   │ status │ restart │ uptime │ memory     │ watching │
+├──────────┼────┼──────┼───────┼────────┼─────────┼────────┼────────────┼──────────┤
+│ app      │ 0  │ fork │ 31659 │ online │ 0       │ 2s     │ 9.266 MB   │ disabled │
+└──────────┴────┴──────┴───────┴────────┴─────────┴────────┴────────────┴──────────┘
+ Use `pm2 show <id|name>` to get more details about an app
+[PM2] Starting /var/www/cad/source/server/app.js in fork_mode (1 instance)
+[PM2] Done.
+┌──────────┬────┬──────┬───────┬────────┬─────────┬────────┬─────────────┬──────────┐
+│ App name │ id │ mode │ pid   │ status │ restart │ uptime │ memory      │ watching │
+├──────────┼────┼──────┼───────┼────────┼─────────┼────────┼─────────────┼──────────┤
+│ app      │ 0  │ fork │ 31659 │ online │ 0       │ 15s    │ 29.914 MB   │ disabled │
+│ app      │ 1  │ fork │ 31678 │ online │ 0       │ 2s     │ 8.555 MB    │ disabled │
+└──────────┴────┴──────┴───────┴────────┴─────────┴────────┴─────────────┴──────────┘
+ Use `pm2 show <id|name>` to get more details about an app
+SSH: EXEC: completed after 1,470,113 ms
+SSH: Disconnecting configuration [webserver] ...
+SSH: Transferred 88 file(s)
+Build step 'Send files or execute commands over SSH' changed build result to SUCCESS
+Finished: SUCCESS
