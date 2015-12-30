@@ -1,0 +1,19 @@
+<multi-scm-log>
+<sub-log scm="git https://github.com/akc-org/services-foundation.git">
+<![CDATA[commit 589bccc5b94ceffa8b5ff94d9d8b1aa1f4f39e72
+tree ca5145bc0e645b6b9c3b8f8edb8401d8f0b182b1
+parent aa11194d737e2737a5a6c32602e71c4d95ba8a3b
+author pps2010 &lt;pps2010@yahoo.com&gt; 2015-11-23 11:20:28 -0500
+committer pps2010 &lt;pps2010@yahoo.com&gt; 2015-11-23 11:20:28 -0500
+
+    Added dependency to POM file so that it compiles.....
+
+
+
+:100644 100644 e4debe3715995979df6c81d5d9ded0432870e35b 4e23fce87552fde0bccc1c4f23d8d0aea83a0e4e M	beantransformer/pom.xml
+]]>
+</sub-log>
+<sub-log scm="git https://github.com/akc-org/services-event.git/">
+<![CDATA[]]>
+</sub-log>
+</multi-scm-log>

@@ -1,0 +1,11 @@
+commit 6a7efeb009146c132af6b6ba4384ae1f771e4211
+tree ee0aff847221ccbc6b1bcecbaa610a3667d71b53
+parent 910766f815013e17b92205919f612338f4ed6cd7
+author Feras Arabiat <ferasarabiat@gmail.com> 2015-12-27 16:56:10 +0200
+committer Feras Arabiat <ferasarabiat@gmail.com> 2015-12-27 16:56:10 +0200
+
+    new desgin
+
+
+
+:100644 100644 c12a22ce0240a6f730aac8fb4e57f77ecf9c9c7a 6c2a90ac112a2b84128aba62d8826060606b4b5a M	source/client/styles/app.less

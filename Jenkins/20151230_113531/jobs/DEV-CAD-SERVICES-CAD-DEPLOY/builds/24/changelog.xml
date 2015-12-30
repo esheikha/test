@@ -1,0 +1,19 @@
+commit bdba28e31102aa5ae8331652834193b731cb9ad4
+tree 73b1498b0b3f38516dc3c9f1e0002a419fa4bb47
+parent 2e1adb9c228af951477c8d43aea951104915b9b9
+author sarwajeet-akc <sbb@akc.org> 2015-12-23 21:40:23 +0530
+committer sarwajeet-akc <sbb@akc.org> 2015-12-23 21:40:23 +0530
+
+    MKTG-1892 1. added throw new GenericException(fault) instead of
+    returning it . 2. Added more junit cases for dao layer for state and
+    club
+
+
+
+:100644 100644 f98b3937896639e95e223bc9f0030304772d4396 d7f4ce5a156831ea9b42889e221e3e4b6f847a2a M	src/main/java/org/akc/assembler/impl/CanineAmbassadorAssemblerImpl.java
+:100644 100644 660ce00eb87b9a1db57a22d641dc91549ab01ca9 c520bc65b22b2ed01885feb9b2f2811f833268d6 M	src/main/java/org/akc/assembler/impl/ClubAssemblerImpl.java
+:100644 100644 e6becfd3cb5de36b177a7c5a3f3a5690233be157 624d3204111904a0c39b405756dfdb4db486183c M	src/main/java/org/akc/assembler/impl/StateAssemblerImpl.java
+:100644 100644 01882377a2e53b0ed7276ee8efae0b67d60f48ce 498a186812a2aa53b6eec387c8593d9d3e8c608f M	src/test/java/org/akc/dao/impl/CanineAmbassadorAssemblerImplTest.java
+:100644 100644 27eb2ec1968b5e031a2f0241aa32c025072543fc 8b854014e7d2b147da6a0e783f29be0c93059754 M	src/test/java/org/akc/dao/impl/CanineAmbassadorDaoImplTest.java
+:000000 100644 0000000000000000000000000000000000000000 78c98befd64ae3d11312b3a9971b0ed828ed9ff6 A	src/test/java/org/akc/dao/impl/ClubDaoTest.java
+:000000 100644 0000000000000000000000000000000000000000 b10ad4d24e26e23a261478496e19dc9e7a85236f A	src/test/java/org/akc/dao/impl/StateDaoTest.java

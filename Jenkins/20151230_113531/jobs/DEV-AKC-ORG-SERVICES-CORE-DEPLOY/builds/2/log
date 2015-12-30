@@ -1,0 +1,30 @@
+Started by user [8mha:AAAArR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYl/dLi1CL91OKM1MzsjESHxOKCzKJU3cy8NKD65Ay9vNQSAGskkEHXAAAA[0mEyad Sheikha
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6BkaGJsbJJsYARx1/wscAAAA=[0m02143c43 (hi-speed lxc-fedora17 xlarge m1.xlarge) in workspace /scratch/jenkins/workspace/DEV-AKC-ORG-SERVICES-CORE-DEPLOY
+Deleting this stale workspace
+Cloning the remote Git repository
+Cloning repository https://github.com/akc-org/services-core.git
+ > git init /scratch/jenkins/workspace/DEV-AKC-ORG-SERVICES-CORE-DEPLOY/services-core # timeout=10
+Fetching upstream changes from https://github.com/akc-org/services-core.git
+ > git --version # timeout=10
+using .gitcredentials to set credentials
+ > git config --local credential.username nhaddadin # timeout=10
+ > git config --local credential.helper store --file=/tmp/git5221386311955759720.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/akc-org/services-core.git +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git config remote.origin.url https://github.com/akc-org/services-core.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/akc-org/services-core.git # timeout=10
+Fetching upstream changes from https://github.com/akc-org/services-core.git
+using .gitcredentials to set credentials
+ > git config --local credential.username nhaddadin # timeout=10
+ > git config --local credential.helper store --file=/tmp/git1826441840561045265.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/akc-org/services-core.git +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git rev-parse refs/remotes/origin/dev^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/dev^{commit} # timeout=10
+Checking out Revision 7db780b4f0f27b96a3aed172f94c254222fe1086 (refs/remotes/origin/dev)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7db780b4f0f27b96a3aed172f94c254222fe1086
+ > git rev-list 7db780b4f0f27b96a3aed172f94c254222fe1086 # timeout=10
+Finished: SUCCESS

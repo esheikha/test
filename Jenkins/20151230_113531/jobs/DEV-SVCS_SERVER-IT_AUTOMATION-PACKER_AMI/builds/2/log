@@ -1,0 +1,143 @@
+[EnvInject] - Inject global passwords.
+[EnvInject] - Mask passwords passed as build parameters.
+Started by user [8mha:AAAArR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYl/dLi1CL91OKM1MzsjESHxOKCzKJU3cy8NKD65Ay9vNQSAGskkEHXAAAA[0mEyad Sheikha
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6xqYGqYbGlhYAClCxo8cAAAA=[0m350e1398 (lxc-fedora17 m1.xlarge hi-speed xlarge) in workspace /scratch/jenkins/workspace/Packer_Services_Server_DEV
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/akc-org/IT_Automation.git/ # timeout=10
+Fetching upstream changes from https://github.com/akc-org/IT_Automation.git/
+ > git --version # timeout=10
+using .gitcredentials to set credentials
+ > git config --local credential.username esheikha # timeout=10
+ > git config --local credential.helper store --file=/tmp/git4555164131101793053.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/akc-org/IT_Automation.git/ +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 36a054c0f6bd9a9b5f2ccad074580302955ce87b (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 36a054c0f6bd9a9b5f2ccad074580302955ce87b
+ > git rev-list 36a054c0f6bd9a9b5f2ccad074580302955ce87b # timeout=10
+[Packer_Services_Server_DEV] $ /scratch/jenkins/tools/biz.neustar.jenkins.plugins.packer.PackerInstallation/packer/packer build -var aws_access_key=**** -var aws_secret_key=**** /tmp/packer78075613988833205.json
+[1;32mamazon-ebs output will be in this color.[0m
+
+[1;32m==> amazon-ebs: Prevalidating AMI Name...[0m
+[1;32m==> amazon-ebs: Inspecting the source AMI...[0m
+[1;32m==> amazon-ebs: Creating temporary keypair: packer 564df1ac-7181-e2bd-3ad3-ca956c4e3180[0m
+[1;32m==> amazon-ebs: Creating temporary security group for this instance...[0m
+[1;32m==> amazon-ebs: Authorizing access to port 22 the temporary security group...[0m
+[1;32m==> amazon-ebs: Launching a source AWS instance...[0m
+[0;32m    amazon-ebs: Instance ID: i-fe42d040[0m
+[1;32m==> amazon-ebs: Waiting for instance (i-fe42d040) to become ready...[0m
+[1;32m==> amazon-ebs: Waiting for SSH to become available...[0m
+[1;32m==> amazon-ebs: Connected to SSH![0m
+[1;32m==> amazon-ebs: Provisioning with chef-solo[0m
+[0;32m    amazon-ebs: Installing Chef...[0m
+[0;32m    amazon-ebs: % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current[0m
+[0;32m    amazon-ebs: Dload  Upload   Total   Spent    Left  Speed[0m
+[0;32m    amazon-ebs: 100 18736  100 18736    0     0  20700      0 --:--:-- --:--:-- --:--:-- 20702[0m
+[0;32m    amazon-ebs: Downloading Chef  for ubuntu...[0m
+[0;32m    amazon-ebs: downloading https://www.opscode.com/chef/metadata?v=&prerelease=false&nightlies=false&p=ubuntu&pv=14.04&m=x86_64[0m
+[0;32m    amazon-ebs: to file /tmp/install.sh.1295/metadata.txt[0m
+[0;32m    amazon-ebs: trying wget...[0m
+[0;32m    amazon-ebs: url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/14.04/x86_64/chef_12.5.1-1_amd64.deb[0m
+[0;32m    amazon-ebs: md5	d8fec2da288e94a7e2d649803a9d70f4[0m
+[0;32m    amazon-ebs: sha256	656a4c4a8fd64d74d1d970fb0d07076d6f1d8230d37d751f2c3698a52d82c070[0m
+[0;32m    amazon-ebs: downloaded metadata file looks valid...[0m
+[0;32m    amazon-ebs: downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/14.04/x86_64/chef_12.5.1-1_amd64.deb[0m
+[0;32m    amazon-ebs: to file /tmp/install.sh.1295/chef_12.5.1-1_amd64.deb[0m
+[0;32m    amazon-ebs: trying wget...[0m
+[0;32m    amazon-ebs: Comparing checksum with sha256sum...[0m
+[0;32m    amazon-ebs:[0m
+[0;32m    amazon-ebs: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING[0m
+[0;32m    amazon-ebs:[0m
+[0;32m    amazon-ebs: You are installing an omnibus package without a version pin.  If you are installing[0m
+[0;32m    amazon-ebs: on production servers via an automated process this is DANGEROUS and you will[0m
+[0;32m    amazon-ebs: be upgraded without warning on new releases, even to new major releases.[0m
+[0;32m    amazon-ebs: Letting the version float is only appropriate in desktop, test, development or[0m
+[0;32m    amazon-ebs: CI/CD environments.[0m
+[0;32m    amazon-ebs:[0m
+[0;32m    amazon-ebs: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING[0m
+[0;32m    amazon-ebs:[0m
+[0;32m    amazon-ebs: Installing Chef[0m
+[0;32m    amazon-ebs: installing with dpkg...[0m
+[0;32m    amazon-ebs: Selecting previously unselected package chef.[0m
+[0;32m    amazon-ebs: (Reading database ... 51120 files and directories currently installed.)[0m
+[0;32m    amazon-ebs: Preparing to unpack .../chef_12.5.1-1_amd64.deb ...[0m
+[0;32m    amazon-ebs: Unpacking chef (12.5.1-1) ...[0m
+[0;32m    amazon-ebs: Setting up chef (12.5.1-1) ...[0m
+[0;32m    amazon-ebs: Thank you for installing Chef![0m
+[0;32m    amazon-ebs: Creating directory: /tmp/packer-chef-solo[0m
+[0;32m    amazon-ebs: Creating directory: /tmp/packer-chef-solo/cookbooks-0[0m
+[0;32m    amazon-ebs: Creating directory: /tmp/packer-chef-solo/data_bags[0m
+[0;32m    amazon-ebs: Creating directory: /tmp/packer-chef-solo/environments[0m
+[0;32m    amazon-ebs: Creating configuration file 'solo.rb'[0m
+[0;32m    amazon-ebs: Creating JSON attribute file[0m
+[0;32m    amazon-ebs: Executing Chef: sudo chef-solo --no-color -c /tmp/packer-chef-solo/solo.rb -j /tmp/packer-chef-solo/node.json[0m
+[0;32m    amazon-ebs: [2015-11-19T15:59:39+00:00] INFO: Forking chef instance to converge...[0m
+[0;32m    amazon-ebs: [2015-11-19T15:59:39+00:00] INFO: *** Chef 12.5.1 ***[0m
+[0;32m    amazon-ebs: [2015-11-19T15:59:39+00:00] INFO: Chef-client pid: 1408[0m
+[0;32m    amazon-ebs: [2015-11-19T15:59:43+00:00] INFO: Setting the run_list to ["akc-setup::services-server"] from CLI options[0m
+[0;32m    amazon-ebs: [2015-11-19T15:59:43+00:00] INFO: Run List is [recipe[akc-setup::services-server]][0m
+[0;32m    amazon-ebs: [2015-11-19T15:59:43+00:00] INFO: Run List expands to [akc-setup::services-server][0m
+[0;32m    amazon-ebs: [2015-11-19T15:59:43+00:00] INFO: Starting Chef Run for ip-10-181-248-198.ec2.internal[0m
+[0;32m    amazon-ebs: [2015-11-19T15:59:43+00:00] INFO: Running start handlers[0m
+[0;32m    amazon-ebs: [2015-11-19T15:59:43+00:00] INFO: Start handlers complete.[0m
+[0;32m    amazon-ebs: [2015-11-19T15:59:43+00:00] INFO: Processing execute[apt-get update] action run (akc-setup::services-server line 10)[0m
+[0;32m    amazon-ebs: [2015-11-19T15:59:59+00:00] INFO: execute[apt-get update] ran successfully[0m
+[0;32m    amazon-ebs: [2015-11-19T15:59:59+00:00] INFO: Processing apt_package[default-jdk] action install (akc-setup::services-server line 18)[0m
+[0;32m    amazon-ebs: [2015-11-19T16:01:59+00:00] INFO: apt_package[default-jdk] installed default-jdk at 2:1.7-51[0m
+[0;32m    amazon-ebs: [2015-11-19T16:01:59+00:00] INFO: Processing apt_package[tomcat7] action install (akc-setup::services-server line 26)[0m
+[0;32m    amazon-ebs: [2015-11-19T16:02:12+00:00] INFO: apt_package[tomcat7] installed tomcat7 at 7.0.52-1ubuntu0.3[0m
+[0;32m    amazon-ebs: [2015-11-19T16:02:12+00:00] INFO: Processing apt_package[nginx] action install (akc-setup::services-server line 30)[0m
+[0;32m    amazon-ebs: [2015-11-19T16:02:18+00:00] INFO: apt_package[nginx] installed nginx at 1.4.6-1ubuntu3.3[0m
+[0;32m    amazon-ebs: [2015-11-19T16:02:18+00:00] INFO: Processing execute[create backup of env config file] action run (akc-setup::services-server line 38)[0m
+[0;32m    amazon-ebs: [2015-11-19T16:02:18+00:00] INFO: execute[create backup of env config file] ran successfully[0m
+[0;32m    amazon-ebs: [2015-11-19T16:02:18+00:00] INFO: Processing execute[run sed command] action run (akc-setup::services-server line 42)[0m
+[0;32m    amazon-ebs: [2015-11-19T16:02:18+00:00] INFO: execute[run sed command] ran successfully[0m
+[0;32m    amazon-ebs: [2015-11-19T16:02:18+00:00] INFO: Processing execute[Set Java_HOME] action run (akc-setup::services-server line 46)[0m
+[0;32m    amazon-ebs: [2015-11-19T16:02:18+00:00] INFO: execute[Set Java_HOME] ran successfully[0m
+[0;32m    amazon-ebs: [2015-11-19T16:02:18+00:00] INFO: Processing apt_package[maven] action install (akc-setup::services-server line 54)[0m
+[0;32m    amazon-ebs: [2015-11-19T16:02:50+00:00] INFO: apt_package[maven] installed maven at 3.0.5-1[0m
+[0;32m    amazon-ebs: [2015-11-19T16:02:50+00:00] INFO: Processing apt_package[mysql-client] action install (akc-setup::services-server line 62)[0m
+[0;32m    amazon-ebs: [2015-11-19T16:02:58+00:00] INFO: apt_package[mysql-client] installed mysql-client at 5.5.46-0ubuntu0.14.04.2[0m
+[0;32m    amazon-ebs: [2015-11-19T16:02:58+00:00] INFO: Processing apt_package[libmysql-java] action install (akc-setup::services-server line 66)[0m
+[0;32m    amazon-ebs: [2015-11-19T16:03:01+00:00] INFO: apt_package[libmysql-java] installed libmysql-java at 5.1.28-1[0m
+[0;32m    amazon-ebs: [2015-11-19T16:03:01+00:00] INFO: Processing execute[copy mysql-connector-java config file] action run (akc-setup::services-server line 70)[0m
+[0;32m    amazon-ebs: [2015-11-19T16:03:01+00:00] INFO: execute[copy mysql-connector-java config file] ran successfully[0m
+[0;32m    amazon-ebs: [2015-11-19T16:03:01+00:00] INFO: Processing execute[provide r/w access to /var/lib/tomcat7/webapps] action run (akc-setup::services-server line 78)[0m
+[0;32m    amazon-ebs: [2015-11-19T16:03:01+00:00] INFO: execute[provide r/w access to /var/lib/tomcat7/webapps] ran successfully[0m
+[0;32m    amazon-ebs: [2015-11-19T16:03:01+00:00] INFO: Processing execute[provide r/w access to /var/log/tomcat7] action run (akc-setup::services-server line 82)[0m
+[0;32m    amazon-ebs: [2015-11-19T16:03:01+00:00] INFO: execute[provide r/w access to /var/log/tomcat7] ran successfully[0m
+[0;32m    amazon-ebs: [2015-11-19T16:03:01+00:00] INFO: Processing execute[provide r/w access to /var/log/nginx] action run (akc-setup::services-server line 86)[0m
+[0;32m    amazon-ebs: [2015-11-19T16:03:01+00:00] INFO: execute[provide r/w access to /var/log/nginx] ran successfully[0m
+[0;32m    amazon-ebs: [2015-11-19T16:03:01+00:00] INFO: Processing directory[/var/log/ems] action create (akc-setup::services-server line 94)[0m
+[0;32m    amazon-ebs: [2015-11-19T16:03:01+00:00] INFO: directory[/var/log/ems] created directory /var/log/ems[0m
+[0;32m    amazon-ebs: [2015-11-19T16:03:01+00:00] INFO: directory[/var/log/ems] mode changed to 777[0m
+[0;32m    amazon-ebs: [2015-11-19T16:03:01+00:00] INFO: Processing execute[create backup of context.xml] action run (akc-setup::services-server line 104)[0m
+[0;32m    amazon-ebs: [2015-11-19T16:03:01+00:00] INFO: execute[create backup of context.xml] ran successfully[0m
+[0;32m    amazon-ebs: [2015-11-19T16:03:01+00:00] INFO: Processing template[/etc/tomcat7/context.xml] action create (akc-setup::services-server line 110)[0m
+[0;32m    amazon-ebs: [2015-11-19T16:03:01+00:00] INFO: template[/etc/tomcat7/context.xml] created file /etc/tomcat7/context.xml[0m
+[0;32m    amazon-ebs: [2015-11-19T16:03:01+00:00] INFO: template[/etc/tomcat7/context.xml] updated file contents /etc/tomcat7/context.xml[0m
+[0;32m    amazon-ebs: [2015-11-19T16:03:01+00:00] INFO: Chef Run complete in 198.08936887 seconds[0m
+[0;32m    amazon-ebs: [2015-11-19T16:03:01+00:00] INFO: Skipping removal of unused files from the cache[0m
+[0;32m    amazon-ebs: [2015-11-19T16:03:01+00:00] INFO: Running report handlers[0m
+[0;32m    amazon-ebs: [2015-11-19T16:03:01+00:00] INFO: Report handlers complete[0m
+[1;32m==> amazon-ebs: Stopping the source instance...[0m
+[1;32m==> amazon-ebs: Waiting for the instance to stop...[0m
+[1;32m==> amazon-ebs: Creating the AMI: packer_svcs_server 1447948716[0m
+[0;32m    amazon-ebs: AMI: ami-354e0a5f[0m
+[1;32m==> amazon-ebs: Waiting for AMI to become ready...[0m
+[1;32m==> amazon-ebs: Terminating the source AWS instance...[0m
+[1;32m==> amazon-ebs: Cleaning up any extra volumes...[0m
+[1;32m==> amazon-ebs: Deleting temporary security group...[0m
+[1;32m==> amazon-ebs: Deleting temporary keypair...[0m
+[1;32mBuild 'amazon-ebs' finished.[0m
+
+==> Builds finished. The artifacts of successful builds are:
+--> amazon-ebs: AMIs were created:
+
+us-east-1: ami-354e0a5f
+Finished: SUCCESS
+Finished: SUCCESS
