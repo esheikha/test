@@ -105,7 +105,7 @@ cd /home/ubuntu/repo
 sudo git add -A &amp;&amp; sudo git commit -m &quot;Jenkins backup $(date +\&quot;%Y%m%d_%H%M%S\&quot;)&quot;
 
 sudo rm -R /home/ubuntu/temp/
-#sudo git push --repo https://esheikha:$pass@github.com/esheikha/test.git</execCommand>
+sudo git push --repo https://esheikha:$pass@github.com/esheikha/test.git</execCommand>
                 <execTimeout>120000</execTimeout>
                 <usePty>false</usePty>
               </jenkins.plugins.publish__over__ssh.BapSshTransfer>
